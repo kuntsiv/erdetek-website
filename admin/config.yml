@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: github
-  repo: erdetek/erdetek-website
+  repo: kuntsiv/erdetek-website
   branch: main
 
 media_folder: assets/uploads
