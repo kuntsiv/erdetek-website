@@ -1,0 +1,1290 @@
+{
+  "languages": [
+    {
+      "code": "pl",
+      "label": "PL",
+      "name": "Polski"
+    },
+    {
+      "code": "uk",
+      "label": "UA",
+      "name": "Українська"
+    },
+    {
+      "code": "ru",
+      "label": "RU",
+      "name": "Русский"
+    },
+    {
+      "code": "en",
+      "label": "EN",
+      "name": "English"
+    },
+    {
+      "code": "de",
+      "label": "DE",
+      "name": "Deutsch"
+    },
+    {
+      "code": "fr",
+      "label": "FR",
+      "name": "Français"
+    },
+    {
+      "code": "es",
+      "label": "SP",
+      "name": "Español"
+    }
+  ],
+  "company": {
+    "name": "ERDETEK SP. Z O.O.",
+    "shortName": "Erdetek",
+    "legalSuffix": "sp. z o.o.",
+    "address": [
+      "ul. Reymonta 19/7",
+      "45-065 Opole, Poland"
+    ],
+    "vat": "PL7543075388",
+    "krs": "0000475884",
+    "regon": "161551933",
+    "eori": "PL754307538800000",
+    "email": "office@erdetek.com",
+    "contacts": [
+      {
+        "name": "Andrij Kunciw",
+        "role": "President of the Management Board",
+        "email": "aw@erdetek.com",
+        "phone": "+48 886 281 906"
+      },
+      {
+        "name": "Rostysław Buczko",
+        "role": "Vice President",
+        "email": "r@erdetek.com",
+        "phone": "+48 888 488 730"
+      }
+    ]
+  },
+  "market": [
+    {
+      "sym": "UREA-FOB",
+      "px": "362",
+      "chg": "+4.0",
+      "pct": "+1.12%",
+      "up": true,
+      "tag": "USD/t · Baltic"
+    },
+    {
+      "sym": "AN-CFR",
+      "px": "284",
+      "chg": "-2.0",
+      "pct": "-0.70%",
+      "up": false,
+      "tag": "EUR/t · Gdańsk"
+    },
+    {
+      "sym": "DAP",
+      "px": "598",
+      "chg": "+6.0",
+      "pct": "+1.01%",
+      "up": true,
+      "tag": "USD/t"
+    },
+    {
+      "sym": "MeOH",
+      "px": "352",
+      "chg": "-1.5",
+      "pct": "-0.42%",
+      "up": false,
+      "tag": "EUR/t · ARA"
+    },
+    {
+      "sym": "NaOH-50",
+      "px": "412",
+      "chg": "+3.0",
+      "pct": "+0.73%",
+      "up": true,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "H2SO4",
+      "px": "108",
+      "chg": "+0.5",
+      "pct": "+0.46%",
+      "up": true,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "PE-LDPE",
+      "px": "1,148",
+      "chg": "-8.0",
+      "pct": "-0.69%",
+      "up": false,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "PP-Homo",
+      "px": "1,072",
+      "chg": "+4.0",
+      "pct": "+0.37%",
+      "up": true,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "WHEAT-MATIF",
+      "px": "218.50",
+      "chg": "-1.25",
+      "pct": "-0.57%",
+      "up": false,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "RAPESEED",
+      "px": "482.00",
+      "chg": "+2.50",
+      "pct": "+0.52%",
+      "up": true,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "SOY-MEAL",
+      "px": "398",
+      "chg": "+1.0",
+      "pct": "+0.25%",
+      "up": true,
+      "tag": "EUR/t"
+    },
+    {
+      "sym": "COAL-API2",
+      "px": "104.20",
+      "chg": "-0.80",
+      "pct": "-0.76%",
+      "up": false,
+      "tag": "USD/t"
+    },
+    {
+      "sym": "Cu-LME",
+      "px": "9,402",
+      "chg": "+58",
+      "pct": "+0.62%",
+      "up": true,
+      "tag": "USD/t"
+    },
+    {
+      "sym": "Zn-LME",
+      "px": "2,706",
+      "chg": "+9",
+      "pct": "+0.33%",
+      "up": true,
+      "tag": "USD/t"
+    },
+    {
+      "sym": "EUA",
+      "px": "72.18",
+      "chg": "-0.84",
+      "pct": "-1.15%",
+      "up": false,
+      "tag": "EUR/t · ICE"
+    }
+  ],
+  "shared": {
+    "capabilities": [
+      {
+        "n": "01",
+        "title": "Agricultural & Bio-based Feedstocks",
+        "body": "Crude rapeseed and soybean oils, technical rapeseed oil, used cooking oil, soapstock, oilseed meals and vegetable fatty acids. Subject to availability, specification and documentation review.",
+        "tag": "5 product lines"
+      },
+      {
+        "n": "02",
+        "title": "Tall Oil & Oleochemicals",
+        "body": "Crude Tall Oil (CTO), Refined Tall Oil (RTO), Distilled Tall Oil (DTO), Tall Oil Fatty Acids (TOFA) and industrial fatty-acid blends sourced from verified producers.",
+        "tag": "5 product lines"
+      },
+      {
+        "n": "03",
+        "title": "Fertilisers & Industrial Chemicals",
+        "body": "Anhydrous ammonia, urea, potassium chloride (MOP), nitrogen chemicals and fertiliser raw materials. Sensitive products are routed through compliance and legal review before contracting.",
+        "tag": "5 product lines"
+      },
+      {
+        "n": "04",
+        "title": "Mineral & Ceramic Raw Materials",
+        "body": "Talc, kaolin, feldspar, nepheline syenite and ceramic fillers. Quality is referenced to producer COA and confirmed through pre-shipment sampling.",
+        "tag": "5 product lines"
+      },
+      {
+        "n": "05",
+        "title": "Energy & Technical Oils",
+        "body": "Fuel oil, VGO, heavy oils, bio-naphtha and technical oils. Energy-related products are offered only where the transaction is legally and commercially verified.",
+        "tag": "5 product lines"
+      }
+    ],
+    "desks": [
+      {
+        "city": "Opole, Poland",
+        "focus": "Registered office · Trade execution · Documentation",
+        "tz": "GMT+1"
+      },
+      {
+        "city": "Gdańsk · Gdynia",
+        "focus": "Baltic terminals · Vegetable oils · Fertiliser bulk",
+        "tz": "GMT+1"
+      },
+      {
+        "city": "Szczecin · Świnoujście",
+        "focus": "Liquid bulk · Agricultural feedstocks · Inland barging",
+        "tz": "GMT+1"
+      },
+      {
+        "city": "Hamburg · Rotterdam",
+        "focus": "ARA distillates · Tall oil · Cross-trade chemicals",
+        "tz": "GMT+1"
+      },
+      {
+        "city": "Constanța · Varna",
+        "focus": "Black Sea fertilisers · Grains · CIS origination",
+        "tz": "GMT+2"
+      },
+      {
+        "city": "Klaipėda · Riga",
+        "focus": "Baltic fertilisers · Forest-products oleochemicals",
+        "tz": "GMT+2"
+      },
+      {
+        "city": "Helsinki · Stockholm",
+        "focus": "Tall oil derivatives · Pulp-mill by-products",
+        "tz": "GMT+2"
+      },
+      {
+        "city": "Istanbul · Mersin",
+        "focus": "Cross-trade chemicals · Maghreb origination",
+        "tz": "GMT+3"
+      },
+      {
+        "city": "Antwerpen",
+        "focus": "Tank storage · Solvents · Technical oils",
+        "tz": "GMT+1"
+      },
+      {
+        "city": "Tallinn · Sillamäe",
+        "focus": "Industrial minerals · Energy feedstocks (verified routes)",
+        "tz": "GMT+2"
+      }
+    ],
+    "steps": [
+      {
+        "n": "I",
+        "title": "Origination",
+        "tag": "01 — DISCOVERY",
+        "body": "Long-term relationships with producers, refiners and miners. We commit capital to upstream and midstream infrastructure where it strengthens flow."
+      },
+      {
+        "n": "II",
+        "title": "Risk",
+        "tag": "02 — STRUCTURING",
+        "body": "An independent risk function prices every position end-to-end — flat price, basis, freight, credit, country. No book runs uncovered."
+      },
+      {
+        "n": "III",
+        "title": "Logistics",
+        "tag": "03 — EXECUTION",
+        "body": "Owned tank capacity in Gdańsk and Szczecin, ISO-tank pools, plus rail and road across the V4. We optimise the molecule's journey from origin to point of sale."
+      },
+      {
+        "n": "IV",
+        "title": "Settlement",
+        "tag": "04 — DELIVERY",
+        "body": "Documentary trade finance, hedging overlays, and post-delivery reconciliation. Counterparties see the same numbers we do, in real time."
+      }
+    ],
+    "insights": [
+      {
+        "kicker": "MARKET NOTE",
+        "date": "08 MAY 2026",
+        "read": "12 MIN",
+        "title": "Baltic urea differentials widen as Q3 ammonia maintenance bites in CIS.",
+        "body": "Why prilled granular urea ex-Baltic is finding a premium even as global demand for nitrogen softens through the European summer.",
+        "img": "a",
+        "label": "FIG. 01 — UREA BALTIC DIFF"
+      },
+      {
+        "kicker": "POLICY",
+        "date": "02 MAY 2026",
+        "read": "08 MIN",
+        "title": "CBAM phase-two for fertiliser importers: the filing that matters.",
+        "body": "The first full reporting window closes 31 August. We walk Polish and Czech buyers through embedded-emissions data collection.",
+        "img": "b",
+        "label": "FIG. 02 — REPORTING FLOW"
+      },
+      {
+        "kicker": "RESEARCH",
+        "date": "29 APR 2026",
+        "read": "16 MIN",
+        "title": "Polyolefins in Central Europe: an oversupply that is mostly on paper.",
+        "body": "Headline ARA inventory hides a tightness in prime grades. Converters relying on prompt LDPE should plan Q4 cover differently.",
+        "img": "c",
+        "label": "FIG. 03 — INVENTORY MIX"
+      }
+    ]
+  },
+  "i18n": {
+    "en": {
+      "nav": [
+        "Capabilities",
+        "Coverage",
+        "Methodology",
+        "Insights",
+        "About",
+        "Contact desk"
+      ],
+      "heroKicker": "Opole · Poland · est. independent trading",
+      "heroTitle": [
+        "The molecule from ",
+        "origin",
+        " to point of sale."
+      ],
+      "heroCta": [
+        "Open a counterparty file",
+        "Review capabilities"
+      ],
+      "heroLede": "Erdetek is an independent B2B trading house moving industrial, agricultural and chemical raw materials across the Baltic, the Black Sea and the ARA. Long-form relationships, documented risk, and a single point of contact for every contract.",
+      "meta": [
+        [
+          "Reg. office",
+          "Opole, PL"
+        ],
+        [
+          "Product groups",
+          "05"
+        ],
+        [
+          "Active corridors",
+          "10"
+        ],
+        [
+          "Compliance",
+          "EU · OFAC screened"
+        ]
+      ],
+      "stats": [
+        [
+          "05",
+          "",
+          "Commodity groups under coverage — agri-feedstocks, oleochemicals, fertilisers, minerals and technical oils."
+        ],
+        [
+          "10",
+          "+",
+          "Active trading corridors from the Baltic and the ARA through the Black Sea."
+        ],
+        [
+          "24",
+          "/7",
+          "Documentation desk in Opole, in continuous contact with terminals across two time zones."
+        ],
+        [
+          "100",
+          "%",
+          "Counterparties onboarded under KYC, KYB and EU / OFAC sanctions screening."
+        ]
+      ],
+      "trust": "Working with producers, terminals and counterparties across:",
+      "trustMarks": [
+        "Baltic Terminals",
+        "ARA Distillates",
+        "Black Sea Origination",
+        "V4 Rail",
+        "Pulp & Forest Industries",
+        "EU Customs"
+      ],
+      "capsTitle": [
+        "Five disciplined ",
+        "product books",
+        "."
+      ],
+      "capsDesc": "Erdetek operates focused commodity desks rather than a generalist sales floor. Every product line is sponsored by a senior trader with origin-side relationships and a documented spec library.",
+      "coverageTitle": [
+        "Ten corridors. One ",
+        "execution desk",
+        "."
+      ],
+      "coverageDesc": "Trade execution is concentrated in Opole. Documentation, terminal liaison and surveying are handled by long-standing partners across the Baltic, ARA, Black Sea and Nordic basins. Every shipment is owned end-to-end by a single Erdetek desk.",
+      "methodTitle": [
+        "The same four steps, ",
+        "every contract",
+        "."
+      ],
+      "methodDesc": "We do not promise discretionary genius. We promise a disciplined, repeatable process — applied identically whether the cargo is one ISO-tank of tall oil or a Panamax of urea.",
+      "pull": "A commodity contract is only ever as good as the documentation that follows it — and the people who answer the phone when something on the dock isn’t quite right.",
+      "pullAttr": "Erdetek Trading Desk · Opole",
+      "insightsTitle": [
+        "Market notes for ",
+        "counterparties",
+        "."
+      ],
+      "insightsDesc": "Short, dated notes from the Erdetek desk. We publish what we use internally to brief counterparties — concise, sourced, and aware of what a buyer or producer actually needs to do next.",
+      "aboutTitle": [
+        "An independent house, ",
+        "built around documentation",
+        "."
+      ],
+      "aboutDesc": "We are a small, owner-operated trading company. That is a feature, not an apology: every counterparty deals with a principal, every contract is signed by a named individual, and the same person who structures the trade is reachable when the cargo is on the water.",
+      "aboutLede": [
+        "Founded in Opole, Erdetek connects producers in the CIS, the Baltic and the Nordics with industrial buyers in ",
+        "Central Europe and the Med",
+        "."
+      ],
+      "aboutBody": [
+        "We commit capital to long-term origination relationships rather than to speculative flat-price positions. Every barrel, tonne or ISO-tank we move is supported by full documentation, terminal attestation and an independent risk overlay.",
+        "Sensitive products — anhydrous ammonia, energy feedstocks, dual-use chemicals — pass through compliance and legal review before contracting. We have no interest in transactions we cannot stand behind."
+      ],
+      "contactTitle": [
+        "One inbound channel. ",
+        "One named owner",
+        " per contract."
+      ],
+      "contactKicker": "Open a counterparty file",
+      "contactBody": "Send your RFQ, offer or KYC pack to the trade desk and we will route it internally to the relevant commodity group. We respond to every legitimate enquiry, in writing, within one business day.",
+      "contactCta": [
+        "office@erdetek.com",
+        "Meet the desk"
+      ],
+      "footer": [
+        "Trade",
+        "Firm",
+        "Legal",
+        "Open source",
+        "Source available in /content/site.json"
+      ],
+      "footerNote": "Indicative levels only · not a contractual offer"
+    },
+    "pl": {
+      "nav": [
+        "Kompetencje",
+        "Zasięg",
+        "Metodyka",
+        "Notatki",
+        "O firmie",
+        "Kontakt"
+      ],
+      "heroKicker": "Opole · Polska · niezależny handel",
+      "heroTitle": [
+        "Surowiec od ",
+        "pochodzenia",
+        " do punktu sprzedaży."
+      ],
+      "heroCta": [
+        "Otwórz kartotekę kontrahenta",
+        "Zobacz kompetencje"
+      ],
+      "heroLede": "Erdetek to niezależna firma handlowa B2B obsługująca surowce przemysłowe, rolne i chemiczne w europejskich korytarzach. Relacje długoterminowe, udokumentowane ryzyko i jeden odpowiedzialny kontakt dla każdej umowy.",
+      "meta": [
+        [
+          "Siedziba",
+          "Opole, PL"
+        ],
+        [
+          "Grupy produktów",
+          "05"
+        ],
+        [
+          "Aktywne korytarze",
+          "10"
+        ],
+        [
+          "Języki",
+          "PL · UA · RU · EN · DE · FR · ES"
+        ]
+      ],
+      "stats": [
+        [
+          "2013",
+          "Rejestracja w Polsce jako ERDETEK SP. Z O.O."
+        ],
+        [
+          "7",
+          "Wersji językowych dla kupujących, dostawców i partnerów."
+        ],
+        [
+          "5",
+          "Głównych grup produktów na rynkach rolnych, chemicznych, energetycznych i przemysłowych."
+        ],
+        [
+          "1",
+          "Udokumentowana kartoteka kontrahenta dla każdej umowy."
+        ]
+      ],
+      "trust": "Praca w udokumentowanych łańcuchach dostaw surowców B2B",
+      "trustMarks": [
+        "Rolnictwo",
+        "Chemia",
+        "Energia",
+        "Metale",
+        "Logistyka"
+      ],
+      "capsTitle": [
+        "Handel surowcami z ",
+        "udokumentowaną realizacją"
+      ],
+      "capsDesc": "Strona jest teraz wielojęzycznym produktem open source: treść edytuje się w jednym miejscu i można ją sprawdzić przed publikacją.",
+      "methodTitle": [
+        "Jak pracuje ",
+        "Erdetek"
+      ],
+      "methodDesc": "Prosty model operacyjny dla powtarzalnego handlu B2B przez granice.",
+      "steps": [
+        [
+          "01",
+          "Kartoteka kontrahenta",
+          "KYB, VAT/EORI, sankcje i podstawowy kontekst kredytowy przed transakcją."
+        ],
+        [
+          "02",
+          "Specyfikacja",
+          "Produkt, pochodzenie, dokumenty, opakowanie i logistyka są zapisane."
+        ],
+        [
+          "03",
+          "Realizacja",
+          "Komunikacja handlowa, compliance i logistyczna pozostaje w jednym śladzie."
+        ],
+        [
+          "04",
+          "Zamknięcie",
+          "Dokumenty, płatności i zapisy dostawy są dostępne dla kolejnej transakcji."
+        ]
+      ],
+      "pull": "Open source zmienia stronę w narzędzie operacyjne: każdą zmianę języka, usług lub danych prawnych można sprawdzić jak kod.",
+      "insightsTitle": [
+        "Notatki rynkowe i ",
+        "dokumenty robocze"
+      ],
+      "articles": [
+        [
+          "COMPLIANCE",
+          "Dane firmy są częścią produktu",
+          "Rekwizyty i kontakty są utrzymywane jako treść w kontroli wersji."
+        ],
+        [
+          "DOSTAWY",
+          "Czytelna treść dla każdego korytarza",
+          "Siedem języków zmniejsza tarcie w rozmowach z dostawcami i kupującymi."
+        ],
+        [
+          "OPERACJE",
+          "Statyczna strona, prosty deployment",
+          "Publiczna strona nie wymaga bazy danych; źródło jest przejrzyste i przenośne."
+        ]
+      ],
+      "aboutTitle": [
+        "Niezależna firma handlowa B2B z siedzibą w Opolu."
+      ],
+      "aboutBody": [
+        "Erdetek koordynuje transakcje surowcowe między producentami, przetwórcami, dystrybutorami i odbiorcami przemysłowymi.",
+        "Firma koncentruje się na udokumentowanej realizacji: jasne rekwizyty, odpowiedzialne kontakty, weryfikacja kontrahentów i dokumentacja produktowa."
+      ],
+      "contactTitle": [
+        "Otwórz ",
+        "kartotekę kontrahenta"
+      ],
+      "contactBody": "Wyślij zapytanie, ofertę dostawcy lub prośbę o dokumenty. Trade desk przekaże sprawę właściwemu managerowi.",
+      "footer": [
+        "Handel",
+        "Firma",
+        "Prawo",
+        "Open source",
+        "Kod źródłowy w /src"
+      ]
+    },
+    "uk": {
+      "nav": [
+        "Можливості",
+        "Покриття",
+        "Методика",
+        "Огляди",
+        "Про нас",
+        "Контакт"
+      ],
+      "heroKicker": "Ополе · Польща · незалежна торгівля",
+      "heroTitle": [
+        "Сировина від ",
+        "походження",
+        " до точки продажу."
+      ],
+      "heroCta": [
+        "Відкрити файл контрагента",
+        "Переглянути можливості"
+      ],
+      "heroLede": "Erdetek — незалежний B2B трейдер промислової, аграрної та хімічної сировини в європейських коридорах. Довгі відносини, задокументований ризик і одна відповідальна точка контакту для кожного контракту.",
+      "meta": [
+        [
+          "Реєстрація",
+          "Opole, PL"
+        ],
+        [
+          "Групи продуктів",
+          "05"
+        ],
+        [
+          "Активні коридори",
+          "10"
+        ],
+        [
+          "Мови",
+          "PL · UA · RU · EN · DE · FR · ES"
+        ]
+      ],
+      "stats": [
+        [
+          "2013",
+          "Зареєстровано в Польщі як ERDETEK SP. Z O.O."
+        ],
+        [
+          "7",
+          "Мовних версій для покупців, постачальників і партнерів."
+        ],
+        [
+          "5",
+          "Ключових груп продуктів на аграрних, хімічних, енергетичних та промислових ринках."
+        ],
+        [
+          "1",
+          "Документований файл контрагента для кожного контракту."
+        ]
+      ],
+      "trust": "Робота в документованих B2B ланцюгах постачання сировини",
+      "trustMarks": [
+        "Аграрка",
+        "Хімія",
+        "Енергія",
+        "Метали",
+        "Логістика"
+      ],
+      "capsTitle": [
+        "Торгівля сировиною з ",
+        "документованим виконанням"
+      ],
+      "capsDesc": "Сайт тепер є багатомовним open-source продуктом: контент редагується в одному місці й може проходити ревʼю перед публікацією.",
+      "methodTitle": [
+        "Як працює ",
+        "Erdetek"
+      ],
+      "methodDesc": "Проста операційна модель для повторюваної транскордонної B2B торгівлі.",
+      "steps": [
+        [
+          "01",
+          "Файл контрагента",
+          "KYB, VAT/EORI, санкції та базовий кредитний контекст до угоди."
+        ],
+        [
+          "02",
+          "Специфікація",
+          "Продукт, походження, документи, пакування й логістика фіксуються."
+        ],
+        [
+          "03",
+          "Виконання",
+          "Комерція, compliance і логістика залишаються в одному простежуваному потоці."
+        ],
+        [
+          "04",
+          "Закриття",
+          "Документи, платежі й записи доставки доступні для наступної угоди."
+        ]
+      ],
+      "pull": "Open source робить сайт операційним: кожну зміну мов, послуг або реквізитів можна перевіряти як код.",
+      "insightsTitle": [
+        "Ринкові нотатки та ",
+        "робочі документи"
+      ],
+      "articles": [
+        [
+          "COMPLIANCE",
+          "Реквізити є частиною продукту",
+          "Дані компанії й контакти підтримуються як версійований контент."
+        ],
+        [
+          "ПОСТАЧАННЯ",
+          "Зрозумілий контент для кожного коридору",
+          "Сім мов зменшують тертя в розмовах із постачальниками та покупцями."
+        ],
+        [
+          "ОПЕРАЦІЇ",
+          "Статичний сайт, простий деплой",
+          "Публічному сайту не потрібна база даних; джерело прозоре й переносиме."
+        ]
+      ],
+      "aboutTitle": [
+        "Незалежний B2B трейдер із реєстрацією в Ополе."
+      ],
+      "aboutBody": [
+        "Erdetek координує сировинні угоди між виробниками, переробниками, дистрибʼюторами та промисловими споживачами.",
+        "Фокус компанії — документоване виконання: чіткі реквізити, відповідальні контакти, перевірка контрагентів і продуктова документація."
+      ],
+      "contactTitle": [
+        "Відкрити ",
+        "файл контрагента"
+      ],
+      "contactBody": "Надішліть RFQ, пропозицію постачальника або запит документів. Trade desk передасть це відповідальному менеджеру.",
+      "footer": [
+        "Торгівля",
+        "Компанія",
+        "Право",
+        "Open source",
+        "Вихідний код у /src"
+      ]
+    },
+    "ru": {
+      "nav": [
+        "Возможности",
+        "Покрытие",
+        "Методика",
+        "Обзоры",
+        "О нас",
+        "Контакт"
+      ],
+      "heroKicker": "Ополе · Польша · независимая торговля",
+      "heroTitle": [
+        "Сырьё от ",
+        "происхождения",
+        " до точки продажи."
+      ],
+      "heroCta": [
+        "Открыть файл контрагента",
+        "Посмотреть возможности"
+      ],
+      "heroLede": "Erdetek — независимый B2B трейдер промышленного, аграрного и химического сырья в европейских коридорах. Долгосрочные отношения, документированный риск и одна ответственная точка контакта для каждого контракта.",
+      "meta": [
+        [
+          "Регистрация",
+          "Opole, PL"
+        ],
+        [
+          "Группы продуктов",
+          "05"
+        ],
+        [
+          "Активные коридоры",
+          "10"
+        ],
+        [
+          "Языки",
+          "PL · UA · RU · EN · DE · FR · SP"
+        ]
+      ],
+      "stats": [
+        [
+          "2013",
+          "Зарегистрировано в Польше как ERDETEK SP. Z O.O."
+        ],
+        [
+          "7",
+          "Языковых версий для покупателей, поставщиков и партнёров."
+        ],
+        [
+          "5",
+          "Основных групп продуктов на аграрных, химических, энергетических и промышленных рынках."
+        ],
+        [
+          "1",
+          "Документированный файл контрагента для каждого контракта."
+        ]
+      ],
+      "trust": "Работа в документированных B2B цепочках поставки сырья",
+      "trustMarks": [
+        "Аграрный сектор",
+        "Химия",
+        "Энергия",
+        "Металлы",
+        "Логистика"
+      ],
+      "capsTitle": [
+        "Торговля сырьём с ",
+        "документированным исполнением"
+      ],
+      "capsDesc": "Сайт теперь является многоязычным open-source продуктом: контент редактируется в одном месте и может проходить ревью перед публикацией.",
+      "methodTitle": [
+        "Как работает ",
+        "Erdetek"
+      ],
+      "methodDesc": "Простая операционная модель для повторяемой трансграничной B2B торговли.",
+      "steps": [
+        [
+          "01",
+          "Файл контрагента",
+          "KYB, VAT/EORI, санкции и базовый кредитный контекст до сделки."
+        ],
+        [
+          "02",
+          "Спецификация",
+          "Продукт, происхождение, документы, упаковка и логистика фиксируются."
+        ],
+        [
+          "03",
+          "Исполнение",
+          "Коммерция, compliance и логистика остаются в одном прослеживаемом потоке."
+        ],
+        [
+          "04",
+          "Закрытие",
+          "Документы, платежи и записи доставки доступны для следующей сделки."
+        ]
+      ],
+      "pull": "Open source делает сайт операционным инструментом: каждое изменение языков, услуг или реквизитов можно проверять как код.",
+      "insightsTitle": [
+        "Рыночные заметки и ",
+        "рабочие документы"
+      ],
+      "articles": [
+        [
+          "COMPLIANCE",
+          "Реквизиты являются частью продукта",
+          "Данные компании и контакты поддерживаются как версионируемый контент."
+        ],
+        [
+          "ПОСТАВКИ",
+          "Понятный контент для каждого коридора",
+          "Семь языков снижают трение в общении с поставщиками и покупателями."
+        ],
+        [
+          "ОПЕРАЦИИ",
+          "Статический сайт, простой деплой",
+          "Публичному сайту не нужна база данных; исходный код прозрачен и переносим."
+        ]
+      ],
+      "aboutTitle": [
+        "Независимый B2B трейдер с регистрацией в Ополе."
+      ],
+      "aboutBody": [
+        "Erdetek координирует сырьевые сделки между производителями, переработчиками, дистрибьюторами и промышленными потребителями.",
+        "Фокус компании — документированное исполнение: точные реквизиты, ответственные контакты, проверка контрагентов и продуктовая документация."
+      ],
+      "contactTitle": [
+        "Открыть ",
+        "файл контрагента"
+      ],
+      "contactBody": "Отправьте RFQ, предложение поставщика или запрос документов. Trade desk передаст его ответственному менеджеру.",
+      "footer": [
+        "Торговля",
+        "Компания",
+        "Право",
+        "Open source",
+        "Исходный код в /src"
+      ]
+    },
+    "de": {
+      "nav": [
+        "Leistungen",
+        "Abdeckung",
+        "Methodik",
+        "Einblicke",
+        "Über uns",
+        "Kontakt"
+      ],
+      "heroKicker": "Opole · Polen · unabhängiger Handel",
+      "heroTitle": [
+        "Rohstoffe von der ",
+        "Herkunft",
+        " bis zum Verkaufspunkt."
+      ],
+      "heroCta": [
+        "Kontrahentendatei öffnen",
+        "Leistungen ansehen"
+      ],
+      "heroLede": "Erdetek ist ein unabhängiges B2B-Handelshaus für industrielle, landwirtschaftliche und chemische Rohstoffe entlang europäischer Korridore.",
+      "meta": [
+        [
+          "Sitz",
+          "Opole, PL"
+        ],
+        [
+          "Produktgruppen",
+          "05"
+        ],
+        [
+          "Aktive Korridore",
+          "10"
+        ],
+        [
+          "Sprachen",
+          "PL · UA · RU · EN · DE · FR · SP"
+        ]
+      ],
+      "stats": [
+        [
+          "2013",
+          "In Polen als ERDETEK SP. Z O.O. registriert."
+        ],
+        [
+          "7",
+          "Sprachversionen für Käufer, Lieferanten und Partner."
+        ],
+        [
+          "5",
+          "Kernproduktgruppen in Agrar-, Chemie-, Energie- und Industriemärkten."
+        ],
+        [
+          "1",
+          "Dokumentierte Kontrahentendatei je Vertrag."
+        ]
+      ],
+      "trust": "Arbeit in dokumentierten B2B-Rohstofflieferketten",
+      "trustMarks": [
+        "Agrar",
+        "Chemie",
+        "Energie",
+        "Metalle",
+        "Logistik"
+      ],
+      "capsTitle": [
+        "Rohstoffhandel mit ",
+        "dokumentierter Ausführung"
+      ],
+      "capsDesc": "Die Website ist jetzt ein mehrsprachiges Open-Source-Produkt: Inhalte werden an einer Stelle gepflegt und vor Veröffentlichung geprüft.",
+      "methodTitle": [
+        "Wie ",
+        "Erdetek arbeitet"
+      ],
+      "methodDesc": "Ein einfaches Betriebsmodell für wiederholbaren grenzüberschreitenden B2B-Handel.",
+      "steps": [
+        [
+          "01",
+          "Kontrahentendatei",
+          "KYB, VAT/EORI, Sanktionen und Basiskreditkontext vor dem Handel."
+        ],
+        [
+          "02",
+          "Spezifikation",
+          "Produkt, Herkunft, Dokumente, Verpackung und Logistikbedingungen werden erfasst."
+        ],
+        [
+          "03",
+          "Ausführung",
+          "Handel, Compliance und Logistik bleiben in einem nachvollziehbaren Ablauf."
+        ],
+        [
+          "04",
+          "Abschluss",
+          "Dokumente, Zahlungsdaten und Liefernachweise bleiben für den nächsten Deal verfügbar."
+        ]
+      ],
+      "pull": "Open Source macht die Website operativ: Änderungen an Sprachen, Leistungen oder Rechtsdaten können wie Software geprüft werden.",
+      "insightsTitle": [
+        "Marktnotizen und ",
+        "Arbeitsdokumente"
+      ],
+      "articles": [
+        [
+          "COMPLIANCE",
+          "Firmendaten sind Teil des Produkts",
+          "Rechtsdaten und Kontakte werden als versionierter Inhalt gepflegt."
+        ],
+        [
+          "LIEFERKETTE",
+          "Lesbarer Inhalt für jeden Korridor",
+          "Sieben Sprachen reduzieren Reibung in Gesprächen mit Lieferanten und Käufern."
+        ],
+        [
+          "BETRIEB",
+          "Statische Website, einfache Bereitstellung",
+          "Für die öffentliche Website ist keine Datenbank erforderlich; die Quelle ist transparent und portabel."
+        ]
+      ],
+      "aboutTitle": [
+        "Unabhängiges B2B-Handelshaus mit Sitz in Opole."
+      ],
+      "aboutBody": [
+        "Erdetek koordiniert Rohstoffgeschäfte zwischen Produzenten, Verarbeitern, Distributoren und industriellen Verbrauchern.",
+        "Der Fokus liegt auf dokumentierter Ausführung: klare Rechtsdaten, verantwortliche Kontakte, Kontrahentenprüfung und produktbezogene Dokumentation."
+      ],
+      "contactTitle": [
+        "Kontrahentendatei ",
+        "öffnen"
+      ],
+      "contactBody": "Senden Sie eine Anfrage, ein Lieferantenangebot oder eine Dokumentenanfrage. Der Trade Desk leitet sie an den verantwortlichen Manager weiter.",
+      "footer": [
+        "Handel",
+        "Firma",
+        "Recht",
+        "Open source",
+        "Quellcode in /src"
+      ]
+    },
+    "fr": {
+      "nav": [
+        "Capacités",
+        "Couverture",
+        "Méthode",
+        "Notes",
+        "À propos",
+        "Contact"
+      ],
+      "heroKicker": "Opole · Pologne · négoce indépendant",
+      "heroTitle": [
+        "La matière première de ",
+        "l'origine",
+        " au point de vente."
+      ],
+      "heroCta": [
+        "Ouvrir un dossier contrepartie",
+        "Voir les capacités"
+      ],
+      "heroLede": "Erdetek est une maison de négoce B2B indépendante pour les matières premières industrielles, agricoles et chimiques sur les corridors européens.",
+      "meta": [
+        [
+          "Siège",
+          "Opole, PL"
+        ],
+        [
+          "Groupes produits",
+          "05"
+        ],
+        [
+          "Corridors actifs",
+          "10"
+        ],
+        [
+          "Langues",
+          "PL · UA · RU · EN · DE · FR · SP"
+        ]
+      ],
+      "stats": [
+        [
+          "2013",
+          "Enregistrée en Pologne comme ERDETEK SP. Z O.O."
+        ],
+        [
+          "7",
+          "Versions linguistiques pour acheteurs, fournisseurs et partenaires."
+        ],
+        [
+          "5",
+          "Groupes de produits sur les marchés agricoles, chimiques, énergétiques et industriels."
+        ],
+        [
+          "1",
+          "Dossier contrepartie documenté pour chaque contrat."
+        ]
+      ],
+      "trust": "Travail dans des chaînes d'approvisionnement B2B documentées",
+      "trustMarks": [
+        "Agriculture",
+        "Chimie",
+        "Énergie",
+        "Métaux",
+        "Logistique"
+      ],
+      "capsTitle": [
+        "Négoce de matières premières avec ",
+        "exécution documentée"
+      ],
+      "capsDesc": "Le site est maintenant un produit open source multilingue: le contenu est édité au même endroit et revu avant publication.",
+      "methodTitle": [
+        "Comment travaille ",
+        "Erdetek"
+      ],
+      "methodDesc": "Un modèle opérationnel simple pour le commerce B2B transfrontalier répétable.",
+      "steps": [
+        [
+          "01",
+          "Dossier contrepartie",
+          "KYB, VAT/EORI, sanctions et contexte crédit de base avant transaction."
+        ],
+        [
+          "02",
+          "Spécification",
+          "Produit, origine, documents, emballage et logistique sont enregistrés."
+        ],
+        [
+          "03",
+          "Exécution",
+          "Commerce, conformité et logistique restent dans un flux traçable."
+        ],
+        [
+          "04",
+          "Clôture",
+          "Documents, paiements et preuves de livraison restent disponibles pour l'opération suivante."
+        ]
+      ],
+      "pull": "L'open source rend le site opérationnel: chaque changement de langue, service ou donnée légale peut être revu comme du code.",
+      "insightsTitle": [
+        "Notes de marché et ",
+        "documents de travail"
+      ],
+      "articles": [
+        [
+          "CONFORMITÉ",
+          "Les données légales font partie du produit",
+          "Les informations société et contacts sont maintenues comme contenu versionné."
+        ],
+        [
+          "APPROVISIONNEMENT",
+          "Contenu lisible pour chaque corridor",
+          "Sept langues réduisent les frictions avec fournisseurs et acheteurs."
+        ],
+        [
+          "OPÉRATIONS",
+          "Site statique, déploiement simple",
+          "Aucune base de données n'est requise pour le site public; la source est transparente et portable."
+        ]
+      ],
+      "aboutTitle": [
+        "Maison de négoce B2B indépendante basée à Opole."
+      ],
+      "aboutBody": [
+        "Erdetek coordonne des transactions de matières premières entre producteurs, transformateurs, distributeurs et consommateurs industriels.",
+        "La société se concentre sur l'exécution documentée: données claires, contacts responsables, vérification des contreparties et documentation produit."
+      ],
+      "contactTitle": [
+        "Ouvrir un ",
+        "dossier contrepartie"
+      ],
+      "contactBody": "Envoyez une demande, une offre fournisseur ou une demande de documents. Le trade desk la route vers le manager responsable.",
+      "footer": [
+        "Négoce",
+        "Société",
+        "Légal",
+        "Open source",
+        "Source disponible dans /src"
+      ]
+    },
+    "es": {
+      "nav": [
+        "Capacidades",
+        "Cobertura",
+        "Método",
+        "Notas",
+        "Empresa",
+        "Contacto"
+      ],
+      "heroKicker": "Opole · Polonia · comercio independiente",
+      "heroTitle": [
+        "La materia prima desde el ",
+        "origen",
+        " hasta el punto de venta."
+      ],
+      "heroCta": [
+        "Abrir expediente de contraparte",
+        "Ver capacidades"
+      ],
+      "heroLede": "Erdetek es una casa de comercio B2B independiente para materias primas industriales, agrícolas y químicas en corredores europeos.",
+      "meta": [
+        [
+          "Sede",
+          "Opole, PL"
+        ],
+        [
+          "Grupos de producto",
+          "05"
+        ],
+        [
+          "Corredores activos",
+          "10"
+        ],
+        [
+          "Idiomas",
+          "PL · UA · RU · EN · DE · FR · SP"
+        ]
+      ],
+      "stats": [
+        [
+          "2013",
+          "Registrada en Polonia como ERDETEK SP. Z O.O."
+        ],
+        [
+          "7",
+          "Versiones lingüísticas para compradores, proveedores y socios."
+        ],
+        [
+          "5",
+          "Grupos principales en mercados agrícolas, químicos, energéticos e industriales."
+        ],
+        [
+          "1",
+          "Expediente documentado de contraparte por contrato."
+        ]
+      ],
+      "trust": "Trabajo en cadenas B2B documentadas de suministro de materias primas",
+      "trustMarks": [
+        "Agricultura",
+        "Química",
+        "Energía",
+        "Metales",
+        "Logística"
+      ],
+      "capsTitle": [
+        "Comercio de materias primas con ",
+        "ejecución documentada"
+      ],
+      "capsDesc": "El sitio ahora es un producto open source multilingüe: el contenido se edita en un solo lugar y puede revisarse antes de publicar.",
+      "methodTitle": [
+        "Cómo trabaja ",
+        "Erdetek"
+      ],
+      "methodDesc": "Un modelo operativo simple para comercio B2B transfronterizo repetible.",
+      "steps": [
+        [
+          "01",
+          "Expediente de contraparte",
+          "KYB, VAT/EORI, sanciones y contexto crediticio básico antes de operar."
+        ],
+        [
+          "02",
+          "Especificación",
+          "Producto, origen, documentos, embalaje y logística quedan registrados."
+        ],
+        [
+          "03",
+          "Ejecución",
+          "Comercio, compliance y logística permanecen en un flujo trazable."
+        ],
+        [
+          "04",
+          "Cierre",
+          "Documentos, pagos y registros de entrega quedan disponibles para la siguiente operación."
+        ]
+      ],
+      "pull": "El open source convierte el sitio en una herramienta operativa: cada cambio de idioma, servicio o dato legal puede revisarse como software.",
+      "insightsTitle": [
+        "Notas de mercado y ",
+        "documentos de trabajo"
+      ],
+      "articles": [
+        [
+          "COMPLIANCE",
+          "Los datos legales son parte del producto",
+          "Datos de empresa, banco y contactos se mantienen como contenido versionado."
+        ],
+        [
+          "SUMINISTRO",
+          "Contenido claro para cada corredor",
+          "Siete idiomas reducen fricción con proveedores y compradores."
+        ],
+        [
+          "OPERACIONES",
+          "Sitio estático, despliegue simple",
+          "El sitio público no requiere base de datos; la fuente es transparente y portable."
+        ]
+      ],
+      "aboutTitle": [
+        "Casa de comercio B2B independiente con sede en Opole."
+      ],
+      "aboutBody": [
+        "Erdetek coordina transacciones de materias primas entre productores, procesadores, distribuidores y consumidores industriales.",
+        "La empresa se centra en ejecución documentada: datos legales claros, contactos responsables, verificación de contrapartes y documentación de producto."
+      ],
+      "contactTitle": [
+        "Abrir ",
+        "expediente de contraparte"
+      ],
+      "contactBody": "Envíe una RFQ, una oferta de proveedor o una solicitud de documentos. El trade desk la dirige al manager responsable.",
+      "footer": [
+        "Comercio",
+        "Empresa",
+        "Legal",
+        "Open source",
+        "Código fuente en /src"
+      ]
+    }
+  }
+}

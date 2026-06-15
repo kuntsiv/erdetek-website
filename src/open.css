@@ -1,0 +1,86 @@
+.lang-switch {
+  align-items: center;
+  border-left: 1px solid var(--line);
+  display: flex;
+  gap: 6px;
+  margin-left: 2px;
+  padding-left: 18px;
+}
+
+.lang-switch button {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--ink-sub);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  line-height: 1;
+  min-width: 32px;
+  padding: 8px 7px;
+  text-transform: uppercase;
+}
+
+.lang-switch button:hover,
+.lang-switch button[aria-pressed="true"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.open-source-note {
+  border-top: 1px solid var(--line);
+  color: var(--ink-mute);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  margin-top: 16px;
+  padding-top: 14px;
+  text-transform: uppercase;
+}
+
+.open-source-note a {
+  border-bottom: 1px solid currentColor;
+}
+
+@media (width <= 1040px) {
+  .nav {
+    gap: 16px;
+  }
+
+  .lang-switch {
+    gap: 3px;
+    padding-left: 12px;
+  }
+
+  .lang-switch button {
+    min-width: 28px;
+    padding: 7px 5px;
+  }
+}
+
+@media (width <= 720px) {
+  .topbar__inner {
+    height: auto;
+    min-height: 64px;
+    padding: 12px 0;
+  }
+
+  .brand__co {
+    display: none;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .nav .pill {
+    display: none;
+  }
+
+  .lang-switch {
+    border-left: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 170px;
+    padding-left: 0;
+  }
+}

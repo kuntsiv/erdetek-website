@@ -1,0 +1,104 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: erdetek/erdetek-website
+  branch: main
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: editorial_workflow
+
+collections:
+  - name: site
+    label: Site Content
+    files:
+      - name: site
+        label: Erdetek Website
+        file: content/site.json
+        format: json
+        fields:
+          - label: Company
+            name: company
+            widget: object
+            fields:
+              - { label: Legal name, name: name, widget: string }
+              - { label: Short name, name: shortName, widget: string }
+              - { label: Legal suffix, name: legalSuffix, widget: string }
+              - label: Address
+                name: address
+                widget: list
+                field: { label: Line, name: line, widget: string }
+              - { label: EU VAT, name: vat, widget: string }
+              - { label: KRS, name: krs, widget: string }
+              - { label: REGON, name: regon, widget: string }
+              - { label: EORI, name: eori, widget: string }
+              - { label: Public email, name: email, widget: string }
+              - label: Contacts
+                name: contacts
+                widget: list
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Role, name: role, widget: string }
+                  - { label: Email, name: email, widget: string }
+                  - { label: Phone, name: phone, widget: string, required: false }
+                  - { label: Bio, name: bio, widget: text, required: false }
+          - label: Market ticker
+            name: market
+            widget: list
+            fields:
+              - { label: Symbol, name: sym, widget: string }
+              - { label: Price, name: px, widget: string }
+              - { label: Change, name: chg, widget: string }
+              - { label: Percent, name: pct, widget: string }
+              - { label: Up, name: up, widget: boolean, default: true }
+              - { label: Tag, name: tag, widget: string }
+          - label: Shared Sections
+            name: shared
+            widget: object
+            fields:
+              - label: Capabilities
+                name: capabilities
+                widget: list
+                fields:
+                  - { label: Number, name: n, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Body, name: body, widget: text }
+                  - { label: Tag, name: tag, widget: string }
+              - label: Coverage desks
+                name: desks
+                widget: list
+                fields:
+                  - { label: City, name: city, widget: string }
+                  - { label: Timezone, name: tz, widget: string }
+                  - { label: Focus, name: focus, widget: text }
+              - label: Method steps
+                name: steps
+                widget: list
+                fields:
+                  - { label: Number, name: n, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Tag, name: tag, widget: string }
+                  - { label: Body, name: body, widget: text }
+              - label: Insights
+                name: insights
+                widget: list
+                fields:
+                  - { label: Kicker, name: kicker, widget: string }
+                  - { label: Date, name: date, widget: string }
+                  - { label: Read time, name: read, widget: string }
+                  - { label: Title, name: title, widget: string }
+                  - { label: Body, name: body, widget: text }
+                  - { label: Figure class, name: img, widget: select, options: [a, b, c] }
+                  - { label: Figure label, name: label, widget: string }
+          - label: Languages
+            name: i18n
+            widget: object
+            fields:
+              - { label: English, name: en, widget: code, default_language: json, output_code_only: true }
+              - { label: Polish, name: pl, widget: code, default_language: json, output_code_only: true }
+              - { label: Ukrainian, name: uk, widget: code, default_language: json, output_code_only: true }
+              - { label: Russian, name: ru, widget: code, default_language: json, output_code_only: true }
+              - { label: German, name: de, widget: code, default_language: json, output_code_only: true }
+              - { label: French, name: fr, widget: code, default_language: json, output_code_only: true }
+              - { label: Spanish, name: es, widget: code, default_language: json, output_code_only: true }
