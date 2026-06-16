@@ -60,10 +60,13 @@ backend:
   name: github
   repo: OWNER/REPOSITORY
   branch: main
+  base_url: https://example.com
+  auth_endpoint: admin/auth
 ```
 
-GitHub-backed Decap CMS also needs an OAuth backend for login. Until that is
-configured, `/admin/` is present but cannot commit production changes.
+Production editing uses a small same-origin auth proxy at `/admin/auth`.
+The proxy token and HTTP Basic Auth credentials are stored only on the server,
+not in this repository.
 
 ## Deployment
 

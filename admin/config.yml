@@ -4,6 +4,8 @@ backend:
   name: github
   repo: kuntsiv/erdetek-website
   branch: main
+  base_url: https://erdetek.eu
+  auth_endpoint: admin/auth
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
