@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "score": 11,
+  "max": 11,
+  "checks": {
+    "nonempty": true,
+    "doctype": true,
+    "has_title": true,
+    "meta_description": true,
+    "opengraph": true,
+    "json_ld": true,
+    "has_h1": true,
+    "cta_present": true,
+    "self_contained": true,
+    "parses": true
+  },
+  "external_refs": [],
+  "json_ld_errors": []
+}

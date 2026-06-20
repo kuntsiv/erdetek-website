@@ -1,0 +1,54 @@
+{
+  "site": {
+    "name": "Erdetek",
+    "target_domain": null,
+    "primary_language": "pl",
+    "page_type": "service"
+  },
+  "languages": [
+    "pl"
+  ],
+  "nav": [
+    {
+      "label": "Przeglądy i konserwacja instalacji elektrycznych",
+      "href": "#top"
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "title": "Przeglądy i konserwacja instalacji elektrycznych",
+      "audience": "Małe i średnie firmy w woj. opolskim",
+      "cta": "Zamów przegląd",
+      "tone": "rzeczowy, profesjonalny, budzący zaufanie",
+      "key_points": [
+        "Pomiary elektryczne i protokoły zgodne z normą",
+        "Szybki termin, dojazd na terenie Opolszczyzny",
+        "Stała opieka serwisowa i raporty"
+      ],
+      "evidence": [
+        {
+          "claim": "Pomiary elektryczne i protokoły zgodne z normą",
+          "source": "operator_brief",
+          "confidence": "brief"
+        },
+        {
+          "claim": "Szybki termin, dojazd na terenie Opolszczyzny",
+          "source": "operator_brief",
+          "confidence": "brief"
+        },
+        {
+          "claim": "Stała opieka serwisowa i raporty",
+          "source": "operator_brief",
+          "confidence": "brief"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Przeglądy i konserwacja instalacji elektrycznych | Erdetek",
+    "description": "Erdetek: Przeglądy i konserwacja instalacji elektrycznych dla Małe i średnie firmy w woj. opolskim",
+    "canonical": null
+  },
+  "assets": []
+}
