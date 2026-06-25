@@ -5,6 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Erdetek CMS</title>
+    <script>
+      (() => {
+        const originalFetch = window.fetch.bind(window);
+        const githubSiteJsonPath = "/contents/content/site.json";
+        const decoder = new TextDecoder();
+        const encoder = new TextEncoder();
+
+        function bytesToBase64(bytes) {
+          let binary = "";
+          bytes.forEach((byte) => {
+            binary += String.fromCharCode(byte);
+          });
+          return btoa(binary);
+        }
+
+        function base64ToText(base64) {
+          const binary = atob(base64);
+          const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+          return decoder.decode(bytes);
+        }
+
+        function textToBase64(text) {
+          return bytesToBase64(encoder.encode(text));
+        }
+
+        function stringifyLanguagePacks(text) {
+          const data = JSON.parse(text);
+          if (!data || typeof data !== "object" || !data.i18n) return null;
+
+          const next = { ...data, i18n: { ...data.i18n } };
+          let changed = false;
+
+          for (const [language, pack] of Object.entries(next.i18n)) {
+            if (pack && typeof pack === "object") {
+              next.i18n[language] = JSON.stringify(pack, null, 2);
+              changed = true;
+            }
+          }
+
+          return changed ? JSON.stringify(next, null, 2) : null;
+        }
+
+        async function rewriteResponse(response) {
+          const payload = await response.clone().json();
+          if (!payload || typeof payload !== "object" || typeof payload.content !== "string") return response;
+
+          let sourceText = payload.content;
+          const base64Encoded = payload.encoding === "base64";
+
+          if (base64Encoded) {
+            sourceText = base64ToText(sourceText);
+          }
+
+          const rewrittenText = stringifyLanguagePacks(sourceText);
+          if (!rewrittenText) return response;
+
+          const headers = new Headers(response.headers);
+          headers.set("content-type", "application/json; charset=utf-8");
+          const nextPayload = {
+            ...payload,
+            content: base64Encoded ? textToBase64(rewrittenText) : rewrittenText,
+          };
+          return new Response(JSON.stringify(nextPayload), {
+            status: response.status,
+            statusText: response.statusText,
+            headers,
+          });
+        }
+
+        window.fetch = async (input, init) => {
+          const response = await originalFetch(input, init);
+          const url = typeof input === "string" ? input : input.url;
+          if (!response.ok || !url.includes(githubSiteJsonPath)) return response;
+
+          try {
+            return await rewriteResponse(response);
+          } catch {
+            return response;
+          }
+        };
+      })();
+    </script>
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
