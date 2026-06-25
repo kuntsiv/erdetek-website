@@ -7,6 +7,59 @@
     <meta name="description" content="Erdetek Sp. z o.o. is an independent B2B commodity trading company based in Opole, Poland." />
     <link rel="stylesheet" crossorigin href="/assets/index-fCPbR_uZ.css">
     <link rel="stylesheet" href="/src/open.css">
+    <script>
+      (() => {
+        const originalFetch = window.fetch.bind(window);
+        const siteJsonPath = "/content/site.json";
+
+        function parseLanguagePack(value) {
+          if (typeof value !== "string") return value;
+          try {
+            return JSON.parse(value);
+          } catch {
+            return value;
+          }
+        }
+
+        async function rewriteResponse(response) {
+          const data = await response.clone().json();
+          if (!data || typeof data !== "object" || !data.i18n) return response;
+
+          const next = { ...data, i18n: { ...data.i18n } };
+          let changed = false;
+
+          for (const [language, pack] of Object.entries(next.i18n)) {
+            const parsed = parseLanguagePack(pack);
+            if (parsed !== pack) {
+              next.i18n[language] = parsed;
+              changed = true;
+            }
+          }
+
+          if (!changed) return response;
+
+          const headers = new Headers(response.headers);
+          headers.set("content-type", "application/json; charset=utf-8");
+          return new Response(JSON.stringify(next), {
+            status: response.status,
+            statusText: response.statusText,
+            headers,
+          });
+        }
+
+        window.fetch = async (input, init) => {
+          const response = await originalFetch(input, init);
+          const url = typeof input === "string" ? input : input.url;
+          if (!response.ok || !url.includes(siteJsonPath)) return response;
+
+          try {
+            return await rewriteResponse(response);
+          } catch {
+            return response;
+          }
+        };
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
