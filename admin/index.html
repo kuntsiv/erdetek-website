@@ -7,6 +7,7 @@
     <title>Erdetek CMS</title>
     <script>
       (() => {
+        window.CMS_MANUAL_INIT = true;
         const originalFetch = window.fetch.bind(window);
         const githubSiteJsonPath = "/contents/content/site.json";
         const decoder = new TextDecoder();
@@ -43,7 +44,7 @@
             }
           }
 
-          return changed ? next : null;
+          return changed ? JSON.stringify(next, null, 2) : null;
         }
 
         async function rewriteResponse(response) {
@@ -58,8 +59,7 @@
               sourceText = base64ToText(sourceText);
             }
 
-            const parsed = JSON.parse(sourceText);
-            const rewrittenData = stringifyLanguagePacks(parsed);
+            const rewrittenData = stringifyLanguagePacks(JSON.parse(sourceText));
             if (!rewrittenData) return response;
 
             const rewrittenText = JSON.stringify(rewrittenData, null, 2);
@@ -104,5 +104,56 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
+    <script>
+      (() => {
+        const { CMS, h } = window;
+
+        function normalizeCodeValue(value) {
+          if (typeof value === "string") return value;
+          if (value && typeof value.toJS === "function") {
+            try {
+              return JSON.stringify(value.toJS(), null, 2);
+            } catch {
+              return "";
+            }
+          }
+          if (value && typeof value === "object") {
+            try {
+              return JSON.stringify(value, null, 2);
+            } catch {
+              return "";
+            }
+          }
+          return "";
+        }
+
+        function SafeCodeControl(props) {
+          const { forID, value, onChange, classNameWrapper, setActiveStyle, setInactiveStyle } = props;
+          return h("textarea", {
+            id: forID,
+            className: classNameWrapper,
+            value: normalizeCodeValue(value),
+            onChange: (event) => onChange(event.target.value),
+            onFocus: setActiveStyle,
+            onBlur: setInactiveStyle,
+            spellCheck: false,
+            style: {
+              minHeight: "300px",
+              width: "100%",
+              boxSizing: "border-box",
+              fontFamily: "monospace",
+              resize: "vertical",
+            },
+          });
+        }
+
+        function SafeCodePreview(props) {
+          return h("pre", { style: { whiteSpace: "pre-wrap", margin: 0 } }, normalizeCodeValue(props.value));
+        }
+
+        CMS.registerWidget("safe-code", SafeCodeControl, SafeCodePreview);
+        CMS.init();
+      })();
+    </script>
   </body>
 </html>
