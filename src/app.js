@@ -28,8 +28,19 @@ function textWithEm(parts) {
   return `${html(parts[0])}<em>${html(parts[1])}</em>${html(parts[2])}`;
 }
 
+function parseLanguagePack(value) {
+  if (typeof value === "string") {
+    try {
+      return JSON.parse(value);
+    } catch {
+      return {};
+    }
+  }
+  return value || {};
+}
+
 function getContent(lang) {
-  return site.i18n[lang] || site.i18n.en;
+  return parseLanguagePack(site.i18n[lang] || site.i18n.en);
 }
 
 function renderTopbar(t, lang) {
