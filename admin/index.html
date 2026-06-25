@@ -30,8 +30,7 @@
           return bytesToBase64(encoder.encode(text));
         }
 
-        function stringifyLanguagePacks(text) {
-          const data = JSON.parse(text);
+        function stringifyLanguagePacks(data) {
           if (!data || typeof data !== "object" || !data.i18n) return null;
 
           const next = { ...data, i18n: { ...data.i18n } };
@@ -44,30 +43,45 @@
             }
           }
 
-          return changed ? JSON.stringify(next, null, 2) : null;
+          return changed ? next : null;
         }
 
         async function rewriteResponse(response) {
           const payload = await response.clone().json();
-          if (!payload || typeof payload !== "object" || typeof payload.content !== "string") return response;
+          if (!payload || typeof payload !== "object") return response;
 
-          let sourceText = payload.content;
-          const base64Encoded = payload.encoding === "base64";
+          if (typeof payload.content === "string") {
+            let sourceText = payload.content;
+            const base64Encoded = payload.encoding === "base64";
 
-          if (base64Encoded) {
-            sourceText = base64ToText(sourceText);
+            if (base64Encoded) {
+              sourceText = base64ToText(sourceText);
+            }
+
+            const parsed = JSON.parse(sourceText);
+            const rewrittenData = stringifyLanguagePacks(parsed);
+            if (!rewrittenData) return response;
+
+            const rewrittenText = JSON.stringify(rewrittenData, null, 2);
+            const headers = new Headers(response.headers);
+            headers.set("content-type", "application/json; charset=utf-8");
+            const nextPayload = {
+              ...payload,
+              content: base64Encoded ? textToBase64(rewrittenText) : rewrittenText,
+            };
+            return new Response(JSON.stringify(nextPayload), {
+              status: response.status,
+              statusText: response.statusText,
+              headers,
+            });
           }
 
-          const rewrittenText = stringifyLanguagePacks(sourceText);
-          if (!rewrittenText) return response;
+          const rewrittenData = stringifyLanguagePacks(payload);
+          if (!rewrittenData) return response;
 
           const headers = new Headers(response.headers);
           headers.set("content-type", "application/json; charset=utf-8");
-          const nextPayload = {
-            ...payload,
-            content: base64Encoded ? textToBase64(rewrittenText) : rewrittenText,
-          };
-          return new Response(JSON.stringify(nextPayload), {
+          return new Response(JSON.stringify(rewrittenData), {
             status: response.status,
             statusText: response.statusText,
             headers,
