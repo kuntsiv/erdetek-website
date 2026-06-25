@@ -97,10 +97,10 @@ collections:
             name: i18n
             widget: object
             fields:
-              - { label: English, name: en, widget: code, default_language: json, output_code_only: true }
-              - { label: Polish, name: pl, widget: code, default_language: json, output_code_only: true }
-              - { label: Ukrainian, name: uk, widget: code, default_language: json, output_code_only: true }
-              - { label: Russian, name: ru, widget: code, default_language: json, output_code_only: true }
-              - { label: German, name: de, widget: code, default_language: json, output_code_only: true }
-              - { label: French, name: fr, widget: code, default_language: json, output_code_only: true }
-              - { label: Spanish, name: es, widget: code, default_language: json, output_code_only: true }
+              - { label: English, name: en, widget: safe-code }
+              - { label: Polish, name: pl, widget: safe-code }
+              - { label: Ukrainian, name: uk, widget: safe-code }
+              - { label: Russian, name: ru, widget: safe-code }
+              - { label: German, name: de, widget: safe-code }
+              - { label: French, name: fr, widget: safe-code }
+              - { label: Spanish, name: es, widget: safe-code }
