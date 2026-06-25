@@ -28,8 +28,10 @@ No build step is required. The site can be served by any static web server.
 ## Editing Content
 
 Business copy is kept in `content/site.json`. Edit it through `/admin/` or
-directly in Git. Update one language object and mirror the same meaning across
-the other languages. Company requisites should remain:
+directly in Git. Each language pack in `site.i18n` is stored as a JSON string
+because the CMS uses a `safe-code` widget. Update the decoded language object
+and keep the same meaning across the other languages. Company requisites should
+remain:
 
 - ERDETEK SP. Z O.O.
 - ul. Reymonta 19/7, 45-065 Opole, Poland
