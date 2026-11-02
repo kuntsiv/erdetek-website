@@ -1,0 +1,39 @@
+{
+  "base_commit": "ac96b1c41494488e0d2e95ba648966a0e4db078f",
+  "tested_source_commit": "e7527af2a38298ff22fa0c83faca2d286d6b44f1",
+  "files": [
+    {
+      "path": "src/app.js",
+      "sha256": "d9f7e30b85f09dbd031eb3cae7e7d5857a9fe8b24d791b4ef80ccf03f30cc47a"
+    },
+    {
+      "path": "src/open.css",
+      "sha256": "a776bbd7224bdd71ce18cccb976188b277819ff74305ea52c5312e2d76dbe48d"
+    },
+    {
+      "path": "content/site.json",
+      "sha256": "d5943aa07944085f07ef780e74d034886a2c383869745d1e1d4b77629950ddab"
+    },
+    {
+      "path": "assets/index-fCPbR_uZ.css",
+      "sha256": "51a4202cacd5bc9604e60ceb0200868fcaaf4aad11ea79a0d31375981032fd73"
+    },
+    {
+      "path": "index.html",
+      "sha256": "e5409c2a20d2eab35fa076bafbb1f5ab1881e7a385ec62d93407d02c4e58434a"
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "167b4b2aaf4a8ec05e420038d072f13ba5214c87af76478f8467a480d8b61cd3"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "2922437fe18a3a603c52237d7664e15a579ccf3ff2a85efc344c936e99d8f58e"
+    }
+  ],
+  "navigation": {
+    "index": "../README.md",
+    "validation": "../validation.md",
+    "source_manifest": "source-manifest.json"
+  }
+}

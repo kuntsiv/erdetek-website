@@ -32,7 +32,7 @@
     },
     {
       "code": "es",
-      "label": "SP",
+      "label": "ES",
       "name": "Español"
     }
   ],
@@ -64,128 +64,7 @@
       }
     ]
   },
-  "market": [
-    {
-      "sym": "UREA-FOB",
-      "px": "362",
-      "chg": "+4.0",
-      "pct": "+1.12%",
-      "up": true,
-      "tag": "USD/t · Baltic"
-    },
-    {
-      "sym": "AN-CFR",
-      "px": "284",
-      "chg": "-2.0",
-      "pct": "-0.70%",
-      "up": false,
-      "tag": "EUR/t · Gdańsk"
-    },
-    {
-      "sym": "DAP",
-      "px": "598",
-      "chg": "+6.0",
-      "pct": "+1.01%",
-      "up": true,
-      "tag": "USD/t"
-    },
-    {
-      "sym": "MeOH",
-      "px": "352",
-      "chg": "-1.5",
-      "pct": "-0.42%",
-      "up": false,
-      "tag": "EUR/t · ARA"
-    },
-    {
-      "sym": "NaOH-50",
-      "px": "412",
-      "chg": "+3.0",
-      "pct": "+0.73%",
-      "up": true,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "H2SO4",
-      "px": "108",
-      "chg": "+0.5",
-      "pct": "+0.46%",
-      "up": true,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "PE-LDPE",
-      "px": "1,148",
-      "chg": "-8.0",
-      "pct": "-0.69%",
-      "up": false,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "PP-Homo",
-      "px": "1,072",
-      "chg": "+4.0",
-      "pct": "+0.37%",
-      "up": true,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "WHEAT-MATIF",
-      "px": "218.50",
-      "chg": "-1.25",
-      "pct": "-0.57%",
-      "up": false,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "RAPESEED",
-      "px": "482.00",
-      "chg": "+2.50",
-      "pct": "+0.52%",
-      "up": true,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "SOY-MEAL",
-      "px": "398",
-      "chg": "+1.0",
-      "pct": "+0.25%",
-      "up": true,
-      "tag": "EUR/t"
-    },
-    {
-      "sym": "COAL-API2",
-      "px": "104.20",
-      "chg": "-0.80",
-      "pct": "-0.76%",
-      "up": false,
-      "tag": "USD/t"
-    },
-    {
-      "sym": "Cu-LME",
-      "px": "9,402",
-      "chg": "+58",
-      "pct": "+0.62%",
-      "up": true,
-      "tag": "USD/t"
-    },
-    {
-      "sym": "Zn-LME",
-      "px": "2,706",
-      "chg": "+9",
-      "pct": "+0.33%",
-      "up": true,
-      "tag": "USD/t"
-    },
-    {
-      "sym": "EUA",
-      "px": "72.18",
-      "chg": "-0.84",
-      "pct": "-1.15%",
-      "up": false,
-      "tag": "EUR/t · ICE"
-    }
-  ],
+  "market": [],
   "shared": {
     "capabilities": [
       {

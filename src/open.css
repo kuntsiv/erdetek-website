@@ -336,3 +336,124 @@
     grid-template-columns: 1fr;
   }
 }
+
+.nav-toggle,
+.topbar__cta {
+  display: none;
+}
+
+.topbar.topbar {
+  background: var(--paper, #f7f3ea);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.topbar__inner.topbar__inner {
+  background: var(--paper, #f7f3ea);
+}
+
+#capabilities,
+#coverage,
+#methodology,
+#insights,
+#about,
+#contact {
+  scroll-margin-top: 88px;
+}
+
+@media (width <= 720px) {
+  .nav.nav a:not(.pill){display:flex}
+  .nav[hidden] {
+    display: none !important;
+  }
+
+  .topbar__inner {
+    background: var(--paper, #f7f3ea);
+  }
+
+  .nav a {
+    align-items: center;
+    display: flex;
+    min-height: 44px;
+  }
+
+  .article-detail__summary {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .topbar__inner {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .nav-toggle {
+    align-items: center;
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink);
+    display: inline-flex;
+    font-family: var(--mono);
+    font-size: 11px;
+    gap: 8px;
+    letter-spacing: .08em;
+    min-height: 44px;
+    padding: 0 16px;
+    text-transform: uppercase;
+  }
+
+  .nav-toggle__bars {
+    background: currentColor;
+    box-shadow: 0 -5px 0 currentColor, 0 5px 0 currentColor;
+    height: 2px;
+    width: 16px;
+  }
+
+  .topbar__cta {
+    align-items: center;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    color: var(--ink);
+    display: inline-flex;
+    font-size: 12px;
+    min-height: 44px;
+    padding: 0 16px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .nav.nav {
+    border-top: 1px solid var(--line);
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .nav.nav.is-open {
+    display: flex;
+  }
+
+  .nav a {
+    white-space: normal;
+  }
+
+  .lang-switch {
+    border-left: 0;
+    justify-content: flex-start;
+    max-width: none;
+    padding-left: 0;
+  }
+
+  .lang-switch button {
+    font-size: 11px;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 10px 8px;
+  }
+}
