@@ -588,9 +588,13 @@ function updateUnavailableMeta(lang) {
   clearArticleMeta();
 }
 
-function resetPageMeta(t) {
+function resetPageMeta(t, lang) {
   document.title = `${site.company.shortName} - ${t.nav[0]}`;
-  ensureDescriptionMeta().setAttribute("content", DEFAULT_DESCRIPTION);
+  const pack = getLocalePack(lang);
+  const description = (pack && typeof pack.metaDescription === "string" && pack.metaDescription.trim())
+    ? pack.metaDescription.trim()
+    : DEFAULT_DESCRIPTION;
+  ensureDescriptionMeta().setAttribute("content", description);
   clearArticleMeta();
 }
 
@@ -837,7 +841,7 @@ function scrollToSectionFromHash() {
 
 function render(lang = currentLanguage()) {
   const t = getContent(lang);
-  resetPageMeta(t);
+  resetPageMeta(t, lang);
   root.innerHTML = [
     renderTopbar(t, lang),
     renderTicker(),
