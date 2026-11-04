@@ -16,7 +16,9 @@ const ok=(name,passed,observed)=>checks.push({name,passed:!!passed,observed:Stri
 (async()=>{
   const browser=await chromium.launch({headless:true,executablePath:CHROME,args:['--no-sandbox','--disable-dev-shm-usage']});
   try{
-    const page=await browser.newPage({viewport:{width:1280,height:800}});
+    const W=parseInt(process.env.P3_WIDTH,10)||1280;
+    const H=parseInt(process.env.P3_HEIGHT,10)||800;
+    const page=await browser.newPage({viewport:{width:W,height:H}});
     const pageErrors=[];
     page.on('pageerror',e=>pageErrors.push(String(e)));
     for(const loc of LOCALES){
@@ -34,7 +36,7 @@ const ok=(name,passed,observed)=>checks.push({name,passed:!!passed,observed:Stri
       const pull=await page.$eval('.pull__text',e=>e.textContent.trim()).catch(()=>'');
       ok(loc+' pull',pull===(exp.pull||''),pull.slice(0,40));
       const sw=await page.evaluate(()=>document.documentElement.scrollWidth);
-      ok(loc+' noHOverflow',sw<=1280,'scrollWidth '+sw);
+      ok(loc+' noHOverflow',sw<=W,'scrollWidth '+sw);
       await page.locator('.hero').screenshot({path:path.join(OUT,'home_'+loc+'.png')});
       await page.goto(BASE+'/#article='+ARTICLE+'&lang='+loc,{waitUntil:'domcontentloaded'});
       await page.waitForSelector('.article-detail__body',{timeout:5000});
