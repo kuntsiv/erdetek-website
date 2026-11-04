@@ -448,7 +448,23 @@ function buildCta(cta, ui) {
   const container = document.createElement("div");
   container.className = "article-detail__cta";
   if (typeof cta === "string" && cta.trim()) {
-    container.appendChild(textElement("p", "", plainTextFrom(cta) || cta));
+    const label = plainTextFrom(cta) || cta;
+    const email = site && site.company && typeof site.company.email === "string" ? site.company.email.trim() : "";
+    if (email) {
+      const link = document.createElement("a");
+      link.className = "btn btn--solid";
+      link.setAttribute("href", `mailto:${email}`);
+      link.setAttribute("rel", "noopener noreferrer");
+      link.textContent = label;
+      const arrow = document.createElement("span");
+      arrow.className = "arrow";
+      arrow.textContent = "→";
+      link.appendChild(document.createTextNode(" "));
+      link.appendChild(arrow);
+      container.appendChild(link);
+    } else {
+      container.appendChild(textElement("p", "", label));
+    }
     return container;
   }
   if (!cta || typeof cta !== "object" || Array.isArray(cta)) {
