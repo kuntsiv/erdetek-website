@@ -1,0 +1,37 @@
+{
+  "en": {
+    "heroCta": "Send product, volume and destination",
+    "capsDesc": "Erdetek handles inquiries product by product: send the specification, target volume and destination, and we respond with availability and clearly agreed delivery terms.",
+    "pull": "Every inquiry is answered with specifics — product, specification, volume, destination — and delivery terms agreed in writing before anything moves."
+  },
+  "pl": {
+    "heroCta": "Prześlij produkt, wolumen i miejsce przeznaczenia",
+    "capsDesc": "Erdetek rozpatruje zapytania produkt po produkcie: prześlij specyfikację, docelowy wolumen i miejsce przeznaczenia, a odpowiemy dostępnością i jasno uzgodnionymi warunkami dostawy.",
+    "pull": "Na każde zapytanie odpowiadamy konkretami — produkt, specyfikacja, wolumen, miejsce przeznaczenia — a warunki dostawy są uzgadniane na piśmie, zanim cokolwiek ruszy."
+  },
+  "uk": {
+    "heroCta": "Надішліть продукт, обсяг і пункт призначення",
+    "capsDesc": "Erdetek розглядає запити окремо за кожним продуктом: надішліть специфікацію, цільовий обсяг і пункт призначення, і ми відповімо наявністю та чітко узгодженими умовами поставки.",
+    "pull": "На кожен запит відповідаємо конкретикою — продукт, специфікація, обсяг, пункт призначення — а умови поставки узгоджуються письмово до відвантаження."
+  },
+  "ru": {
+    "heroCta": "Отправьте продукт, объём и пункт назначения",
+    "capsDesc": "Erdetek рассматривает запросы по каждому продукту отдельно: отправьте спецификацию, целевой объём и пункт назначения, и мы ответим наличием и чётко согласованными условиями поставки.",
+    "pull": "На каждый запрос мы отвечаем конкретикой — продукт, спецификация, объём, пункт назначения, — а условия поставки согласовываются письменно до отгрузки."
+  },
+  "de": {
+    "heroCta": "Produkt, Volumen und Bestimmungsort senden",
+    "capsDesc": "Erdetek prüft Anfragen produkt für produkt: Senden Sie Spezifikation, Zielvolumen und Bestimmungsort, und wir antworten mit Verfügbarkeit und klar vereinbarten Lieferbedingungen.",
+    "pull": "Jede Anfrage wird konkret beantwortet — Produkt, Spezifikation, Volumen, Bestimmungsort — und die Lieferbedingungen werden schriftlich vereinbart, bevor sich etwas bewegt."
+  },
+  "fr": {
+    "heroCta": "Envoyez produit, volume et destination",
+    "capsDesc": "Erdetek traite les demandes produit par produit : envoyez la spécification, le volume visé et la destination, et nous répondrons par les disponibilités et des conditions de livraison clairement convenues.",
+    "pull": "Chaque demande reçoit une réponse concrète — produit, spécification, volume, destination — et les conditions de livraison sont convenues par écrit avant toute expédition."
+  },
+  "es": {
+    "heroCta": "Envíe producto, volumen y destino",
+    "capsDesc": "Erdetek atiende las consultas producto por producto: envíe la especificación, el volumen objetivo y el destino, y responderemos con disponibilidad y condiciones de entrega claramente acordadas.",
+    "pull": "Cada consulta recibe una respuesta concreta —producto, especificación, volumen, destino— y las condiciones de entrega se acuerdan por escrito antes de cualquier envío."
+  }
+}
