@@ -2,6 +2,7 @@ const root = document.getElementById("root");
 let site;
 let validLanguages = new Set();
 const SUPPORTED_LANGUAGES = ["pl", "uk", "ru", "en", "de", "fr", "es"];
+const MENU_LABELS = { pl: "Menu", uk: "Меню", ru: "Меню", en: "Menu", de: "Menü", fr: "Menu", es: "Menú" };
 const DEFAULT_DESCRIPTION = document.querySelector('meta[name="description"]')?.getAttribute("content") || "";
 const ARTICLE_UI = {
   pl: {
@@ -142,6 +143,66 @@ function setLanguage(language) {
 function bindLanguageButtons() {
   document.querySelectorAll("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
+  });
+  bindMobileNavOnce();
+}
+
+function closeMobileNav() {
+  const toggle = document.querySelector(".nav-toggle");
+  if (!toggle) return;
+  toggle.setAttribute("aria-expanded", "false");
+  const nav = document.getElementById(toggle.getAttribute("aria-controls") || "");
+  if (nav) {
+    nav.hidden = true;
+    nav.classList.remove("is-open");
+  }
+}
+
+// Single delegated document-level handler pair, bound once per page lifetime.
+// root.innerHTML re-renders replace all header markup, so per-element
+// listeners would leak on every language/article rerender.
+let mobileNavBound = false;
+function resetNavAboveBreakpoint() {
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.getElementById(toggle?.getAttribute("aria-controls") || "primary-nav");
+  if (window.matchMedia("(width > 720px)").matches) {
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+    if (nav) {
+      nav.hidden = false;
+      nav.classList.remove("is-open");
+    }
+    return;
+  }
+  if (toggle && toggle.getAttribute("aria-expanded") !== "true" && nav) {
+    nav.hidden = true;
+    nav.classList.remove("is-open");
+  }
+}
+function bindMobileNavOnce() {
+  if (mobileNavBound) return;
+  mobileNavBound = true;
+  window.addEventListener("resize", resetNavAboveBreakpoint);
+  resetNavAboveBreakpoint();
+  document.addEventListener("click", (event) => {
+    const toggle = event.target.closest(".nav-toggle");
+    if (toggle) {
+      const nav = document.getElementById(toggle.getAttribute("aria-controls") || "");
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      if (nav) {
+        nav.hidden = expanded;
+        nav.classList.toggle("is-open", !expanded);
+      }
+      return;
+    }
+    if (event.target.closest(".nav a[href^='#']")) closeMobileNav();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const toggle = document.querySelector(".nav-toggle[aria-expanded='true']");
+    if (!toggle) return;
+    closeMobileNav();
+    toggle.focus();
   });
 }
 
@@ -604,12 +665,17 @@ function renderTopbar(t, lang) {
           <span>${site.company.shortName}</span>
           <span class="brand__co">${site.company.legalSuffix}</span>
         </a>
-        <nav class="nav" aria-label="Primary">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span class="nav-toggle__text">${html(MENU_LABELS[lang] || MENU_LABELS.en)}</span>
+        </button>
+        <nav class="nav" id="primary-nav" aria-label="Primary">
           ${t.nav.map((label, index) => `<a href="#${navIds[index]}" class="${index === 5 ? "pill" : ""}">${html(label)}</a>`).join("")}
           <span class="lang-switch" aria-label="Language">
-            ${site.languages.filter((language) => validLanguages.has(language.code)).map((language) => `<button type="button" data-lang="${language.code}" aria-pressed="${language.code === lang}" title="${html(language.name)}">${language.label}</button>`).join("")}
+            ${site.languages.filter((language) => validLanguages.has(language.code)).map((language) => `<button type="button" data-lang="${language.code}" aria-pressed="${language.code === lang}" title="${html(language.name)}">${html(language.label)}</button>`).join("")}
           </span>
         </nav>
+        <a href="#contact" class="topbar__cta">${html(t.nav[5])}</a>
       </div>
     </header>
   `;
@@ -853,6 +919,7 @@ function render(lang = currentLanguage()) {
     renderFooter(t),
   ].join("");
   bindLanguageButtons();
+  resetNavAboveBreakpoint();
   scrollToSectionFromHash();
 }
 
@@ -873,6 +940,7 @@ function renderArticlePage(articleId, lang) {
   const main = root.querySelector("#article");
   main.appendChild(article ? buildArticleDetail(article, lang, ui) : buildUnavailable(ui));
   bindLanguageButtons();
+  resetNavAboveBreakpoint();
 }
 
 function renderRoute() {
