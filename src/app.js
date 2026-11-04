@@ -843,7 +843,6 @@ function renderInsights(t, lang) {
           <p class="section-head__desc">${html(t.insightsDesc || t.capsDesc)}</p>
         </div>
         <div class="insights__grid">
-          ${site.shared.insights.map((article) => `<article class="article"><div class="article__fig ${html(article.img)}"><span class="article__fig-label">${html(article.label)}</span></div><div class="article__meta"><span>${html(article.kicker)}</span><span>${html(article.date)}</span><span>${html(article.read)}</span></div><h3 class="article__title">${html(article.title)}</h3><p class="article__body">${html(article.body)}</p><span class="article__more">Read note <span class="arrow">→</span></span></article>`).join("")}
           ${generated}
         </div>
       </div>
