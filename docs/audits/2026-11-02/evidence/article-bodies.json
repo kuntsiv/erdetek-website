@@ -1,0 +1,185 @@
+{
+  "scope": "35 already public article body/identifier fingerprints; no rewrite.",
+  "entries": [
+    {
+      "locale": "en",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "9b7e30a43adc27b068b1d5e19c7b3fef0a36634ec9f3104ce3e7a6bd25ab8a90"
+    },
+    {
+      "locale": "en",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "439ebd1f83a836ca445095b6cb38228c93ce8494da6a4c75c2e8603a6b55fab1"
+    },
+    {
+      "locale": "en",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "4e84f6b9aadfd03e96146c0f0c6b20625175e83242649039222b1665cf3ccefe"
+    },
+    {
+      "locale": "en",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "7d1f63f85a9af7ed5365cce4de038698375de35dc188c4579f947f187ca46c48"
+    },
+    {
+      "locale": "en",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "c644e155b3b2cebc312b96ed35cb7b282cc8de36d7b6fc891160dff705ba8be0"
+    },
+    {
+      "locale": "pl",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "b2432711d42ebfd885fea031fae70c5565ba2ec23fe3d7c160f7f740c5cf8c5b"
+    },
+    {
+      "locale": "pl",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "39c19cf5849b3eef35208533fc3c57406494e8e01f8b0b391044eee95a7c576c"
+    },
+    {
+      "locale": "pl",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "cb349059de07d64d3bcfe1b912c89a50c6b6a68b45f3242e1dc17af25d1a7ff3"
+    },
+    {
+      "locale": "pl",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "fbf6d96d4d4633abb49f9b171f8272ef03164606f7caaed7f021fcd71fe10ab3"
+    },
+    {
+      "locale": "pl",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "f2adfb07499d6a6c8c21f88710385ea17d08348ce485cc1c8af19dd09573af3a"
+    },
+    {
+      "locale": "uk",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "9121583224f95f40fb4c12a138f0ce1a70e35f6fca48f13392b4d6e2ce75c8a4"
+    },
+    {
+      "locale": "uk",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "dab4ecf9da472d4e4d6fe140a6e27757b03a5fbedbc3fd86d954fdbfd0c77531"
+    },
+    {
+      "locale": "uk",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "e81acf42d2c97820974f111ef46178e74a5e58c77d67ce7e4d0ad72710c0eac8"
+    },
+    {
+      "locale": "uk",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "a26c1639b7615b073693fe38d2b15ac099959b966c86bd4f89750d1d8b832abe"
+    },
+    {
+      "locale": "uk",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "e937edcc75723db26997f53a8f7bc914b9742155182844700a98df8f17939c49"
+    },
+    {
+      "locale": "ru",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "3fed29b2d21a3a0069622481903aa472a48b94ae04331e0ad37b4c5dc7f7093a"
+    },
+    {
+      "locale": "ru",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "ec990e36a4533fafeaa16f160ef88247e86776256ac82560098714df68c3c1d4"
+    },
+    {
+      "locale": "ru",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "014b3a5012badd23b76f04b130c19275a74957000e71a60e1f8a581585e59e2d"
+    },
+    {
+      "locale": "ru",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "7ca52582373a9aecabd2fb4f0a35cd08a068130ecc6bbac091bb0917b14d4fe9"
+    },
+    {
+      "locale": "ru",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "32ab851f873c17e9c19b09e802b6dbaa2b130e157bfe7c018982bb8cde46e3af"
+    },
+    {
+      "locale": "de",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "cf9f5638dae67658fab7bf757381c0d00d359d48081e9d7a9dfaa5fa6f547bbb"
+    },
+    {
+      "locale": "de",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "8361cc3db9e3a0d6cae5895d1049b311b0f68af0ae59b677df23889f0c117406"
+    },
+    {
+      "locale": "de",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "16795a0e0d251124ff46a756c0cc6a471e9178abc587aa6f249855cfc1cbba30"
+    },
+    {
+      "locale": "de",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "4e1a68a5a38baea742c48242502a9469c39b1a00a63dfcbc1ceb25812cf46690"
+    },
+    {
+      "locale": "de",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "a7015f4be0ad95a1babea2916615f60ec48545e002ef8ec344f24c706ee458da"
+    },
+    {
+      "locale": "fr",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "1f33f1e58e83e22d4bc4da78690b7de540853cbeeb96f6f2d39f2023560547f8"
+    },
+    {
+      "locale": "fr",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "00d520c13452691cf46b09d6fa25f966ee8e4005997c8159a10dbf1282f1c825"
+    },
+    {
+      "locale": "fr",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "e9df917b04a0383be68286ae1bb9d4ac11ebb2da60f5684ba95c6611bcdbd8aa"
+    },
+    {
+      "locale": "fr",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "e1e2c59ef4f376e725fbce2a18cb4f33e288374d70ba79349b004be4f8354dbf"
+    },
+    {
+      "locale": "fr",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "cd4796664a64d2e8be3972b37fe67817b4d1be655883f78fa7c40a2187b436e8"
+    },
+    {
+      "locale": "es",
+      "content_id": "vegetable_oil_coa_specification_buyer_guide",
+      "body_sha256": "937abf4cf150de9a83b2cc95373b493a20e723b97b9d24dd5cc3a03698d3b50c"
+    },
+    {
+      "locale": "es",
+      "content_id": "wood_pellet_enplus_buyer_verification",
+      "body_sha256": "7e0b1c7b0001c15e2dab2a8187fb381e4d6dd5ff939a12d0dcc392561340fa0e"
+    },
+    {
+      "locale": "es",
+      "content_id": "tall-oil-quality-documents",
+      "body_sha256": "afd5e8b385039d4f0f4903f72e25c3ecc93679ff0d3dd5182dd33e6a48692b4e"
+    },
+    {
+      "locale": "es",
+      "content_id": "urea-quality-documents-storage",
+      "body_sha256": "ed6ab26a45a62e3cb3d0823e33481bf147e0f3f7464437f485599e16e2bb6591"
+    },
+    {
+      "locale": "es",
+      "content_id": "atelier-urea-surface-water-caking-2026",
+      "body_sha256": "7c8e15e5013fe6f43a7ba89d6451a4d182d2690d8b0c1d4ea6a14e2a4798d620"
+    }
+  ],
+  "navigation": {
+    "index": "../README.md",
+    "validation": "../validation.md",
+    "source_manifest": "source-manifest.json"
+  }
+}
