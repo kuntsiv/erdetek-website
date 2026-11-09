@@ -757,7 +757,13 @@ function renderTrust(t) {
   `;
 }
 
-function renderCapabilities(t) {
+function capabilitiesItems(t, lang) {
+  if (lang === "en") return site.shared.capabilities;
+  const items = Array.isArray(t.capabilities) ? t.capabilities : [];
+  return items.slice(0, 5).map(({ n, title, body, tag }) => ({ n, title, body, tag }));
+}
+
+function renderCapabilities(t, lang) {
   return `
     <section id="capabilities" class="caps">
       <div class="container">
@@ -766,7 +772,7 @@ function renderCapabilities(t) {
           <p class="section-head__desc">${html(t.capsDesc)}</p>
         </div>
         <div class="caps__list">
-          ${site.shared.capabilities.map(({ n, title, body, tag }) => `
+          ${capabilitiesItems(t, lang).map(({ n, title, body, tag }) => `
             <article class="cap">
               <div class="cap__n">${n}</div>
               <h3 class="cap__title">${html(title)}</h3>
@@ -925,7 +931,7 @@ function render(lang = currentLanguage()) {
     renderHero(t),
     renderStats(t),
     renderTrust(t),
-    renderCapabilities(t),
+    renderCapabilities(t, lang),
     renderCoverage(t),
     renderMethod(t),
     renderInsights(t, lang),
