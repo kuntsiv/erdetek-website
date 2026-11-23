@@ -1,0 +1,7 @@
+{
+  "job_id": "atelier-rescue-20260620",
+  "site_id": "erdetek",
+  "generator": "mock",
+  "created_at": "2026-06-20T17:28:12Z",
+  "publish": "blocked_until_draft_pr_review_and_merge"
+}
