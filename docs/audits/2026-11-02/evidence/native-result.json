@@ -1,0 +1,290 @@
+{
+  "scope": "Original styled UI run; raw failing result is preserved, not rerun or relabeled.",
+  "original_sha256": "243c2f71a868758b85dfc8ca24f460d172400257bde8451e5b9e9ee7ca2bc942",
+  "passed": 48,
+  "total": 55,
+  "unit_exit": 1,
+  "fatal": [],
+  "checks": [
+    {
+      "name": "stylesheet200",
+      "passed": true,
+      "observed": "css status 200"
+    },
+    {
+      "name": "nonwhiteBody",
+      "passed": true,
+      "observed": "body bg rgb(242, 238, 229)"
+    },
+    {
+      "name": "pl menu44",
+      "passed": true,
+      "observed": "{\"x\":157.078125,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "pl contact44",
+      "passed": true,
+      "observed": "{\"x\":315.296875,\"y\":12,\"width\":74.703125,\"height\":44}"
+    },
+    {
+      "name": "pl navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "pl lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "pl noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "pl esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "pl escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "uk menu44",
+      "passed": true,
+      "observed": "{\"x\":155.828125,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "uk contact44",
+      "passed": true,
+      "observed": "{\"x\":312.78125,\"y\":12,\"width\":77.21875,\"height\":44}"
+    },
+    {
+      "name": "uk navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "uk lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "uk noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "uk esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "uk escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "ru menu44",
+      "passed": true,
+      "observed": "{\"x\":155.828125,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "ru contact44",
+      "passed": true,
+      "observed": "{\"x\":312.78125,\"y\":12,\"width\":77.21875,\"height\":44}"
+    },
+    {
+      "name": "ru navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "ru lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "ru noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "ru esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "ru escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "en menu44",
+      "passed": true,
+      "observed": "{\"x\":142.40625,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "en contact44",
+      "passed": true,
+      "observed": "{\"x\":285.953125,\"y\":12,\"width\":104.046875,\"height\":44}"
+    },
+    {
+      "name": "en navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "en lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "en noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "en esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "en escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "de menu44",
+      "passed": true,
+      "observed": "{\"x\":157.078125,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "de contact44",
+      "passed": true,
+      "observed": "{\"x\":315.296875,\"y\":12,\"width\":74.703125,\"height\":44}"
+    },
+    {
+      "name": "de navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "de lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "de noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "de esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "de escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "fr menu44",
+      "passed": true,
+      "observed": "{\"x\":156.75,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "fr contact44",
+      "passed": true,
+      "observed": "{\"x\":314.640625,\"y\":12,\"width\":75.359375,\"height\":44}"
+    },
+    {
+      "name": "fr navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "fr lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "fr noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "fr esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "fr escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "es menu44",
+      "passed": true,
+      "observed": "{\"x\":153.421875,\"y\":12,\"width\":88.015625,\"height\":44}"
+    },
+    {
+      "name": "es contact44",
+      "passed": true,
+      "observed": "{\"x\":307.96875,\"y\":12,\"width\":82.03125,\"height\":44}"
+    },
+    {
+      "name": "es navOpenLinks",
+      "passed": false,
+      "observed": "visible links 5"
+    },
+    {
+      "name": "es lang7x44",
+      "passed": true,
+      "observed": "count 7"
+    },
+    {
+      "name": "es noHOverflow",
+      "passed": true,
+      "observed": "scrollWidth 390"
+    },
+    {
+      "name": "es esLabel",
+      "passed": true,
+      "observed": "es label ES"
+    },
+    {
+      "name": "es escapeCloses",
+      "passed": true,
+      "observed": "nav hidden after Escape"
+    },
+    {
+      "name": "desktop navVisible",
+      "passed": true,
+      "observed": "nav visible at 1366"
+    },
+    {
+      "name": "desktop toggleHidden",
+      "passed": true,
+      "observed": "toggle hidden at 1366"
+    },
+    {
+      "name": "enArticle titleBody",
+      "passed": true,
+      "observed": "title \"Urea dry per COA: why a single moisture value do\" body true"
+    },
+    {
+      "name": "enArticle summary18px",
+      "passed": true,
+      "observed": "summary font 18px"
+    }
+  ],
+  "navigation": {
+    "index": "../README.md",
+    "validation": "../validation.md",
+    "source_manifest": "source-manifest.json"
+  }
+}

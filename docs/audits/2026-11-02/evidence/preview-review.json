@@ -1,0 +1,56 @@
+{
+  "model": "mistral-large-4",
+  "provider": "mistral-vibe",
+  "response_id": "cd1fa73a14c5441b99df8b40f698ba3a",
+  "verdict": "APPROVE_SCOPED_PRIVATE_PREVIEW",
+  "scope": "Read-only factual contract audit of unchanged privateUX source for a scoped private preview only. Not product approval, not release approval, not full regression, not legal/production acceptance, not a 55/55 claim, and no code changes or reruns were performed.",
+  "source_sha256": {
+    "src/app.js": "d9f7e30b85f09dbd031eb3cae7e7d5857a9fe8b24d791b4ef80ccf03f30cc47a",
+    "src/open.css": "a776bbd7224bdd71ce18cccb976188b277819ff74305ea52c5312e2d76dbe48d",
+    "content/site.json": "d5943aa07944085f07ef780e74d034886a2c383869745d1e1d4b77629950ddab",
+    "assets/index-fCPbR_uZ.css": "51a4202cacd5bc9604e60ceb0200868fcaaf4aad11ea79a0d31375981032fd73",
+    "index.html": "e5409c2a20d2eab35fa076bafbb1f5ab1881e7a385ec62d93407d02c4e58434a",
+    "robots.txt": "167b4b2aaf4a8ec05e420038d072f13ba5214c87af76478f8467a480d8b61cd3",
+    "sitemap.xml": "2922437fe18a3a603c52237d7664e15a579ccf3ff2a85efc344c936e99d8f58e"
+  },
+  "raw_native_result_preserved": {
+    "passed": 48,
+    "total": 55,
+    "fatal": [],
+    "unit_exit": 1,
+    "failed_checks": [
+      "pl navOpenLinks observed visible links 5",
+      "uk navOpenLinks observed visible links 5",
+      "ru navOpenLinks observed visible links 5",
+      "en navOpenLinks observed visible links 5",
+      "de navOpenLinks observed visible links 5",
+      "fr navOpenLinks observed visible links 5",
+      "es navOpenLinks observed visible links 5"
+    ],
+    "other_observed_passes_include": [
+      "stylesheet200",
+      "nonwhiteBody",
+      "menu44 all 7 locales",
+      "contact44 all 7 locales",
+      "lang7x44 all 7 locales",
+      "noHOverflow all 7 locales",
+      "esLabel all 7 locales",
+      "escapeCloses all 7 locales",
+      "desktop navVisible",
+      "desktop toggleHidden",
+      "enArticle titleBody",
+      "enArticle summary18px"
+    ],
+    "claim": "Actual native result remains FAIL 48/55; no 55/55 claim is made."
+  },
+  "remaining_test_defects": [
+    "navOpenLinks oracle should be corrected to expect 5 visible primary nav links at mobile (or 6 rendered anchors with exactly 1 hidden .pill duplicate), while separately asserting the visible topbar__cta contact action; current >=6 visible NAV anchor expectation is defective against the source contract."
+  ],
+  "remaining_product_blockers": [],
+  "release_ready": false,
+  "navigation": {
+    "index": "../README.md",
+    "validation": "../validation.md",
+    "source_manifest": "source-manifest.json"
+  }
+}

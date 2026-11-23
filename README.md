@@ -77,3 +77,7 @@ Copy the files to the web root while keeping the existing `assets/` directory:
 ```sh
 rsync -av index.html src content admin README.md LICENSE package.json /var/www/erdetek/
 ```
+
+## Audit 2026-11-02
+
+A bounded documentation and link-checking packet for the draft branch `atelier/audit-results-linked-20261102` is available at [docs/audits/2026-11-02/README.md](docs/audits/2026-11-02/README.md). It records candidate scope, validation results including a known test-oracle defect, a correction plan, and a navigation graph.

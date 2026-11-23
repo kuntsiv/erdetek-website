@@ -1,0 +1,322 @@
+{
+  "root": "index",
+  "nodes": [
+    {
+      "id": "index",
+      "path": "docs/audits/2026-11-02/README.md"
+    },
+    {
+      "id": "root_readme",
+      "path": "README.md"
+    },
+    {
+      "id": "index_html",
+      "path": "index.html"
+    },
+    {
+      "id": "summary",
+      "path": "docs/audits/2026-11-02/summary.md"
+    },
+    {
+      "id": "validation",
+      "path": "docs/audits/2026-11-02/validation.md"
+    },
+    {
+      "id": "plan",
+      "path": "docs/audits/2026-11-02/correction-plan.md"
+    },
+    {
+      "id": "links",
+      "path": "docs/audits/2026-11-02/links.json"
+    },
+    {
+      "id": "native_result",
+      "path": "docs/audits/2026-11-02/evidence/native-result.json"
+    },
+    {
+      "id": "preview_review",
+      "path": "docs/audits/2026-11-02/evidence/preview-review.json"
+    },
+    {
+      "id": "article_bodies",
+      "path": "docs/audits/2026-11-02/evidence/article-bodies.json"
+    },
+    {
+      "id": "source_manifest",
+      "path": "docs/audits/2026-11-02/evidence/source-manifest.json"
+    },
+    {
+      "id": "baseline_mobile",
+      "path": "docs/audits/2026-11-02/evidence/baseline-mobile.png"
+    },
+    {
+      "id": "candidate_menu_image",
+      "path": "docs/audits/2026-11-02/evidence/candidate-menu.png"
+    },
+    {
+      "id": "candidate_article_image",
+      "path": "docs/audits/2026-11-02/evidence/candidate-article.png"
+    },
+    {
+      "id": "manifest",
+      "path": "docs/audits/2026-11-02/manifest.json"
+    },
+    {
+      "id": "app_js",
+      "path": "src/app.js"
+    },
+    {
+      "id": "open_css",
+      "path": "src/open.css"
+    },
+    {
+      "id": "site_json",
+      "path": "content/site.json"
+    },
+    {
+      "id": "robots",
+      "path": "robots.txt"
+    },
+    {
+      "id": "sitemap",
+      "path": "sitemap.xml"
+    },
+    {
+      "id": "base_asset",
+      "path": "assets/index-fCPbR_uZ.css"
+    },
+    {
+      "id": "operator_audit",
+      "url": "https://docs.google.com/document/d/1FDNfmFQ9WaZsMvFGgmNZE3WESJiZywuFIKqGDVkJxhs/edit",
+      "restricted": true
+    },
+    {
+      "id": "operator_reviews",
+      "url": "https://drive.google.com/file/d/1RDNS2_RQ6yqxRcATSupQDSbeCflTkSZ1/view",
+      "restricted": true
+    },
+    {
+      "id": "operator_plan",
+      "url": "https://drive.google.com/file/d/1UeziPA_H20ECaZ38l_UlDbAHkFZMHjta/view",
+      "restricted": true
+    },
+    {
+      "id": "operator_execution",
+      "url": "https://drive.google.com/file/d/1F6fVxvns9Z9gu5A7P2-Q9kFM5jwT2LTq/view",
+      "restricted": true
+    },
+    {
+      "id": "candidate_archive",
+      "url": "https://drive.google.com/file/d/1Hr0Qr1EEW3L8nNnt5XLmPsIoWw5oAQ6H/view",
+      "restricted": true
+    },
+    {
+      "id": "candidate_menu_drive",
+      "url": "https://drive.google.com/file/d/1JSQWN82rtZBrZRriNISVtlu0jUgs21lI/view",
+      "restricted": true
+    },
+    {
+      "id": "candidate_article_drive",
+      "url": "https://drive.google.com/file/d/17Dv3Om44MYYmP9fxd_Zld_Z1e_NUJiiA/view",
+      "restricted": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "index",
+      "to": "summary"
+    },
+    {
+      "from": "index",
+      "to": "validation"
+    },
+    {
+      "from": "index",
+      "to": "plan"
+    },
+    {
+      "from": "index",
+      "to": "links"
+    },
+    {
+      "from": "index",
+      "to": "root_readme"
+    },
+    {
+      "from": "index",
+      "to": "index_html"
+    },
+    {
+      "from": "index",
+      "to": "native_result"
+    },
+    {
+      "from": "index",
+      "to": "preview_review"
+    },
+    {
+      "from": "index",
+      "to": "article_bodies"
+    },
+    {
+      "from": "index",
+      "to": "source_manifest"
+    },
+    {
+      "from": "index",
+      "to": "baseline_mobile"
+    },
+    {
+      "from": "index",
+      "to": "candidate_menu_image"
+    },
+    {
+      "from": "index",
+      "to": "candidate_article_image"
+    },
+    {
+      "from": "index",
+      "to": "manifest"
+    },
+    {
+      "from": "index",
+      "to": "app_js"
+    },
+    {
+      "from": "index",
+      "to": "open_css"
+    },
+    {
+      "from": "index",
+      "to": "site_json"
+    },
+    {
+      "from": "index",
+      "to": "robots"
+    },
+    {
+      "from": "index",
+      "to": "sitemap"
+    },
+    {
+      "from": "index",
+      "to": "base_asset"
+    },
+    {
+      "from": "index",
+      "to": "operator_audit"
+    },
+    {
+      "from": "index",
+      "to": "operator_reviews"
+    },
+    {
+      "from": "index",
+      "to": "operator_plan"
+    },
+    {
+      "from": "index",
+      "to": "operator_execution"
+    },
+    {
+      "from": "index",
+      "to": "candidate_archive"
+    },
+    {
+      "from": "index",
+      "to": "candidate_menu_drive"
+    },
+    {
+      "from": "index",
+      "to": "candidate_article_drive"
+    },
+    {
+      "from": "root_readme",
+      "to": "index"
+    },
+    {
+      "from": "summary",
+      "to": "index"
+    },
+    {
+      "from": "summary",
+      "to": "validation"
+    },
+    {
+      "from": "summary",
+      "to": "plan"
+    },
+    {
+      "from": "validation",
+      "to": "index"
+    },
+    {
+      "from": "validation",
+      "to": "summary"
+    },
+    {
+      "from": "validation",
+      "to": "native_result"
+    },
+    {
+      "from": "validation",
+      "to": "preview_review"
+    },
+    {
+      "from": "validation",
+      "to": "manifest"
+    },
+    {
+      "from": "plan",
+      "to": "index"
+    },
+    {
+      "from": "plan",
+      "to": "validation"
+    },
+    {
+      "from": "plan",
+      "to": "app_js"
+    },
+    {
+      "from": "plan",
+      "to": "open_css"
+    },
+    {
+      "from": "plan",
+      "to": "site_json"
+    },
+    {
+      "from": "plan",
+      "to": "robots"
+    },
+    {
+      "from": "plan",
+      "to": "sitemap"
+    },
+    {
+      "from": "plan",
+      "to": "base_asset"
+    },
+    {
+      "from": "links",
+      "to": "index"
+    },
+    {
+      "from": "native_result",
+      "to": "index"
+    },
+    {
+      "from": "preview_review",
+      "to": "index"
+    },
+    {
+      "from": "article_bodies",
+      "to": "index"
+    },
+    {
+      "from": "source_manifest",
+      "to": "index"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "Draft candidate and audit package fingerprints; manifest excluded from self-hashing.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "329cbba0f980a26310bef5c6e3fe0bde81dcc607e6e91426d6b16088325957d5"
+    },
+    {
+      "path": "assets/index-fCPbR_uZ.css",
+      "sha256": "51a4202cacd5bc9604e60ceb0200868fcaaf4aad11ea79a0d31375981032fd73"
+    },
+    {
+      "path": "content/site.json",
+      "sha256": "d5943aa07944085f07ef780e74d034886a2c383869745d1e1d4b77629950ddab"
+    },
+    {
+      "path": "docs/audits/2026-11-02/README.md",
+      "sha256": "f8bf0e2669fabe0c33a235da88c3b479882536d831f815b51212dc1ec7eb0802"
+    },
+    {
+      "path": "docs/audits/2026-11-02/correction-plan.md",
+      "sha256": "273624d30d1a951cb0f4254060c0a325e7bcc8d0269c29cf083946f097a71170"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/article-bodies.json",
+      "sha256": "6562e5eca2d948a1cc3c3c099ff14acbd2ad2f6f4eaa5d2a8b537bafc50e88d8"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/baseline-mobile.png",
+      "sha256": "5f3f3d98286138f4f4bb1a638d91885e90f16ec1e14da0d41391d015689ed5ea"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/candidate-article.png",
+      "sha256": "7f8403b6dc46843a087a67e81077661ffa0e96719a4c41023ffe26490f9233d6"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/candidate-menu.png",
+      "sha256": "34b9058bf6231ca623761e215a397c23489569b5517b94fa7929fd1486a5dc9a"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/native-result.json",
+      "sha256": "fb45b3bfcf73b188627c5f0298a636ce3baef590639c3798039c8cd355743b62"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/preview-review.json",
+      "sha256": "001ac3bbd6fd21fa88a643c517a87ece22c1502f901dff1209f350bc6e651fb4"
+    },
+    {
+      "path": "docs/audits/2026-11-02/evidence/source-manifest.json",
+      "sha256": "a6dcbd59505b683f19a33f64ddb0f0f716f5f2a4802063c4027ab52cd765f9f4"
+    },
+    {
+      "path": "docs/audits/2026-11-02/links.json",
+      "sha256": "ba42252ad1286c7fa610d015a73c7cd5d55e0338432c4ef09222b0a09d92c4e2"
+    },
+    {
+      "path": "docs/audits/2026-11-02/summary.md",
+      "sha256": "55d2c27627fb447fc0750cf854ff907cedb262ebf9dbeee4a5058d9dfb29227f"
+    },
+    {
+      "path": "docs/audits/2026-11-02/validation.md",
+      "sha256": "adfe8de319088bd9404e3a81b2c94916d8d5061428b8e9b83b40161058bb092c"
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "167b4b2aaf4a8ec05e420038d072f13ba5214c87af76478f8467a480d8b61cd3"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "2922437fe18a3a603c52237d7664e15a579ccf3ff2a85efc344c936e99d8f58e"
+    },
+    {
+      "path": "src/app.js",
+      "sha256": "d9f7e30b85f09dbd031eb3cae7e7d5857a9fe8b24d791b4ef80ccf03f30cc47a"
+    },
+    {
+      "path": "src/open.css",
+      "sha256": "a776bbd7224bdd71ce18cccb976188b277819ff74305ea52c5312e2d76dbe48d"
+    }
+  ],
+  "navigation": {
+    "index": "README.md"
+  }
+}
