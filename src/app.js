@@ -370,6 +370,8 @@ function labelTexts(labels) {
   }
   if (!labels || typeof labels !== "object") return out;
   Object.entries(labels).forEach(([key, value]) => {
+    const normalizedKey = String(key).trim().toLowerCase();
+    if (normalizedKey === "audience" || normalizedKey === "finding" || normalizedKey === "topic") return;
     const text = scalarText(value);
     if (text) {
       out.push(`${key}: ${text}`);
@@ -537,15 +539,37 @@ function buildArticleDetail(article, lang, ui) {
   const cta = buildCta(article.cta, ui);
   if (cta) wrapper.appendChild(cta);
 
-  if (Array.isArray(article.evidence_ids) && article.evidence_ids.length) {
+  const metadata = article.metadata && typeof article.metadata === "object" && !Array.isArray(article.metadata)
+    ? article.metadata
+    : null;
+  const sourceText = metadata && typeof metadata.source === "string" ? metadata.source.trim() : "";
+  const sourceEvidence = Array.isArray(article.evidence_ids) ? article.evidence_ids : [];
+  if (sourceText || sourceEvidence.length) {
     const sources = document.createElement("section");
     sources.className = "article-detail__sources";
     sources.appendChild(textElement("h2", "article-detail__section-title", ui.sources));
     const list = document.createElement("ul");
-    article.evidence_ids.forEach((evidence) => {
+    if (sourceText) {
       const item = document.createElement("li");
-      if (appendMetaValue(item, evidence)) list.appendChild(item);
-    });
+      const urlMatch = sourceText.match(/https?:\/\/[^\s]+/i);
+      const url = urlMatch ? safeHref(urlMatch[0]) : null;
+      if (url) {
+        item.appendChild(document.createTextNode(sourceText.replace(urlMatch[0], "")));
+        const link = document.createElement("a");
+        link.setAttribute("href", url);
+        link.setAttribute("rel", "noopener noreferrer");
+        link.textContent = urlMatch[0];
+        item.appendChild(link);
+      } else {
+        item.textContent = sourceText;
+      }
+      if (item.childNodes.length) list.appendChild(item);
+    } else {
+      sourceEvidence.forEach((evidence) => {
+        const item = document.createElement("li");
+        if (appendMetaValue(item, evidence)) list.appendChild(item);
+      });
+    }
     if (list.childNodes.length) {
       sources.appendChild(list);
       wrapper.appendChild(sources);
