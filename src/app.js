@@ -370,6 +370,8 @@ function labelTexts(labels) {
   }
   if (!labels || typeof labels !== "object") return out;
   Object.entries(labels).forEach(([key, value]) => {
+    const normalizedKey = String(key).trim().toLowerCase();
+    if (normalizedKey === "audience" || normalizedKey === "finding" || normalizedKey === "topic") return;
     const text = scalarText(value);
     if (text) {
       out.push(`${key}: ${text}`);
